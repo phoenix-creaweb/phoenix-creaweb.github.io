@@ -1,0 +1,15 @@
+main
+{
+	display: flex;
+}
+
+aside
+{
+	width: 30%;
+    /* background-color: #00BCD4; */
+}
+
+section
+{
+	width: 70%;
+}
