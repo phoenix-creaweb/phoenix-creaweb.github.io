@@ -38,6 +38,7 @@ h1
 {
 	margin-top: 0;
 	margin-bottom: 80px;
+	color: #404040;
 }
 
 h2
@@ -150,6 +151,7 @@ aside p
 	border: #5c5252 2px solid;
 	padding: 9px 5px;
 	border-radius: 50%;
+	flex: 1;
 }
 
 /* Modifications de section */
@@ -214,7 +216,12 @@ section h3
 	justify-content: space-around;
 }
 
-
+.recommandation p:first-child
+{
+	text-transform: uppercase;
+	margin-top: 0px;
+	font-weight: bold;
+}
 
 
 
