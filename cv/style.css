@@ -218,7 +218,7 @@ section h3
 	font-weight: bold;
 }
 
-@media all and (max-device-width: 480px)
+@media all and (max-width: 800px)
 {
 	main
 	{
