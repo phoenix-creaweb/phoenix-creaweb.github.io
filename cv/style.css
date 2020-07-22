@@ -17,9 +17,9 @@ body
 main
 {
 	display: flex;
-	margin: auto;
 	max-width: 1188px;
-	border: lightgrey 1px solid;
+	margin: auto;
+	border: lightgrey 1px solid;	
 }
 
 /*Les titres*/
@@ -225,6 +225,11 @@ section h3
 	font-weight: bold;
 }
 
+footer p
+{
+	text-align: center;
+}
+
 @media all and (max-width: 800px)
 {
 	body
@@ -262,7 +267,7 @@ section h3
 
 	.loisirs
 	{
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 	}
 
 	.loisirs i
