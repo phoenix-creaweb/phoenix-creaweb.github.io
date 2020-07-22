@@ -132,6 +132,11 @@ aside p
 	flex: 1;
 }
 
+.loisirs p
+{
+	padding: 0;
+}
+
 .i_loisirs
 {
 	display: flex;
@@ -146,6 +151,7 @@ aside p
 	padding: 9px 5px;
 	border-radius: 50%;
 	flex: 1;
+	margin: 0 5px;
 }
 
 /* Modifications de section */
@@ -173,6 +179,7 @@ section h3
 	margin-top: 0px;
 	font-size: 1.2em;
 	font-weight: bold;
+	text-align: left;
 }
 
 .date_lieu
@@ -251,6 +258,16 @@ section h3
 	.recommandation
 	{
 		flex-direction: column;
+	}
+
+	.loisirs
+	{
+		margin-bottom: 20px;
+	}
+
+	.loisirs i
+	{
+		margin: 0 20px;
 	}
 }
 
