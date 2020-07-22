@@ -2,27 +2,18 @@
     font-family: 'aileronregular';
     src: url('font/Aileron-Regular-webfont.eot');
     src: url('font/Aileron-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/Aileron-Regular-webfont.woff2') format('woff2'),
-         url('font/Aileron-Regular-webfont.woff') format('woff'),
-         url('font/Aileron-Regular-webfont.ttf') format('truetype'),
-         url('font/Aileron-Regular-webfont.svg#aileronregular') format('svg');
+         url('font/Aileron-Regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
-   
-
-/* 
-Modifications de main:
-mise en place de flexbox
-margin auto pour centrer le main dans la fenêtre
-largeur max fixée à celle du modèle
-*/
 body
 {
 	font-family: aileronregular;
 }
+
+/* Modifications de main */
 
 main
 {
