@@ -59,6 +59,11 @@ strong
 
 /* les listes */
 
+ul
+{
+	padding-left: 0;
+}
+
 li
 {
 	display:flex;
