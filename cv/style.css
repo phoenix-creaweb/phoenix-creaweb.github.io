@@ -5,7 +5,6 @@
          url('font/Aileron-Regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 body
@@ -21,10 +20,10 @@ main
 	margin: auto;
 	max-width: 1188px;
 	border: lightgrey 1px solid;
-
 }
 
 /*Les titres*/
+
 h1
 {
 	margin-top: 0;
@@ -46,6 +45,7 @@ h3
 }
 
 /* les paragraphes et le texte */
+
 p
 {
 	text-align: justify;
@@ -71,6 +71,7 @@ li
 }
 
 /* les images récupérées par le script */
+
 i
 {
 	color: #4dd0e1;
@@ -79,6 +80,7 @@ i
 
 
 /* Modifications de aside */
+
 aside
 {
 	width: 30%;
@@ -147,6 +149,7 @@ aside p
 }
 
 /* Modifications de section */
+
 section
 {
 	width: 70%;
@@ -215,5 +218,34 @@ section h3
 	font-weight: bold;
 }
 
+@media all and (max-width: 800px)
+{
+	main
+	{
+		flex-direction: column;
+		max-width: 480px;
+		min-width: 400px;
+	}
 
+	aside, section
+	{
+		width: auto;
+
+	}
+
+	li
+	{
+		flex-direction: column;
+	}
+
+	.pupuce, .pucedujour
+	{
+		display: none;
+	}
+
+	.recommandation
+	{
+		flex-direction: column;
+	}
+}
 
