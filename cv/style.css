@@ -220,6 +220,11 @@ section h3
 
 @media all and (max-width: 800px)
 {
+	body
+	{
+		margin: 0;
+	}
+
 	main
 	{
 		flex-direction: column;
