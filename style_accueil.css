@@ -1,12 +1,48 @@
 /* Feuille de style dédiée à la page d'accueil */
 
+/* Mise en forme générale */
+
 .contenu
 {
-	/*width: 480px;*/
 	margin: auto;
-	border: grey 1px solid;
+	border: lightgrey 1px solid;
 	padding: 5px;
+	max-width: 1000px;
 }
+
+/* Définition des Couleurs de fond */
+
+.backgnd_grey
+{
+	background-color: grey;
+}
+
+.backgnd_lgrey
+{
+	background-color: lightgrey;
+}
+
+.backgnd_gold
+{
+	background-color: gold;
+}
+
+.backgnd_lime
+{
+	background-color: lime;
+}
+
+.backgnd_ygreen
+{
+	background-color: yellowgreen;
+}
+
+.backgnd_green
+{
+	background-color: green;
+}
+
+/* Définition des Couleurs de texte */
 
 .text_blue
 {
@@ -28,31 +64,66 @@
 	color: lightgrey;
 }
 
+.text_grey
+{
+	color: grey;
+}
+
+/* Modification de mise en page du texte */
+
 .align_center
 {
 	text-align: center;
 }
 
-.backgnd_grey
+p:first-child
 {
-	background-color: grey;
+	text-transform: uppercase;
 }
 
-.backgnd_lime
+footer p:first-child
 {
-	background-color: lime;
+	text-transform: none;
 }
 
-.backgnd_ygreen
+/* Définition de l'affichage des projets */
+
+.project
 {
-	background-color: yellowgreen;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
-@media screen
+.project_preview
 {
-	.contenu
-		{
-			width: 90%;
-		}
+	padding: 5px;
+	margin: 5px;
+    width: 200px;
+    height: 200px;
 }
 
+.project_link
+{
+	text-decoration: none;
+}
+
+/* Modifications en fonction des tailles d'écran */
+
+@media all AND (max-width: 800px) AND (min-width: 361px)
+{
+	.project_preview
+	{
+		width: 150px;
+		height: 150px;
+	}
+}
+
+@media all AND (max-width: 360px) AND (min-width: 300px)
+{
+	.project_preview
+	{
+		width: 125px;
+		height: 125px;
+	}
+}
