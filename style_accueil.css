@@ -1,0 +1,58 @@
+/* Feuille de style dédiée à la page d'accueil */
+
+.contenu
+{
+	/*width: 480px;*/
+	margin: auto;
+	border: grey 1px solid;
+	padding: 5px;
+}
+
+.text_blue
+{
+	color: blue;
+}
+
+.text_white
+{
+	color: white;
+}
+
+.text_ygreen
+{
+	color: yellowgreen;
+}
+
+.text_lgrey
+{
+	color: lightgrey;
+}
+
+.align_center
+{
+	text-align: center;
+}
+
+.backgnd_grey
+{
+	background-color: grey;
+}
+
+.backgnd_lime
+{
+	background-color: lime;
+}
+
+.backgnd_ygreen
+{
+	background-color: yellowgreen;
+}
+
+@media screen
+{
+	.contenu
+		{
+			width: 90%;
+		}
+}
+
