@@ -241,7 +241,6 @@ footer p
 	{
 		flex-direction: column;
 		max-width: 480px;
-		min-width: 400px;
 	}
 
 	aside, section
