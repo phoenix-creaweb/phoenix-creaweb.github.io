@@ -194,11 +194,6 @@ section h3
 	font-size: 1.5em;
 }
 
-.logo
-{
-	margin-right: 25px;
-}
-
 .pucedujour i
 {
 	font-size: 1em;
@@ -252,6 +247,26 @@ footer p
 	li
 	{
 		flex-direction: column;
+	}
+
+	h1
+	{
+		font-size: 20px;
+	}
+
+	h2
+	{
+		font-size: 25px;
+	}
+
+	section h3
+	{
+		font-size: 1.2em;
+	}
+
+	.block_section p:first-child
+	{
+		font-size: 1.1em;
 	}
 
 	.pupuce, .pucedujour
