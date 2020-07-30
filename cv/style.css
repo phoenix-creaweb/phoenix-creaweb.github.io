@@ -241,7 +241,11 @@ footer p
 	aside, section
 	{
 		width: auto;
+	}
 
+	section
+	{
+		padding: 20px;
 	}
 
 	li
@@ -286,7 +290,7 @@ footer p
 
 	.loisirs i
 	{
-		margin: 0 20px;
+		margin: 0 15px;
 	}
 }
 
