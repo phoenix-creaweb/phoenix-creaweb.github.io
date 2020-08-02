@@ -76,7 +76,7 @@
 	text-align: center;
 }
 
-p:first-child
+.project p:first-child
 {
 	text-transform: uppercase;
 }
@@ -84,6 +84,7 @@ p:first-child
 footer p:first-child
 {
 	text-transform: none;
+	padding: 10px 0;
 }
 
 /* Définition de l'affichage des projets */
@@ -107,6 +108,19 @@ footer p:first-child
 {
 	text-decoration: none;
 }
+
+/* Habillage des boites */
+
+.no-margin-top
+{
+	margin-top: 0px;
+}
+
+.rounded
+{
+	border-radius: 20%;
+}
+
 
 /* Modifications en fonction des tailles d'écran */
 
