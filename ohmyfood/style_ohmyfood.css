@@ -1,0 +1,35 @@
+.container
+{
+	width: 400px;
+	margin: auto;
+}
+
+.border
+{
+	border: grey 1px solid;
+}
+
+.menu
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.btn
+{
+	width: 150px;
+	height: 200px;
+	margin: 10px;
+}
+
+.text-ctrd
+{
+	text-align: center;
+}
+
+.footer
+{
+	display: flex;
+	justify-content: space-around;
+}
