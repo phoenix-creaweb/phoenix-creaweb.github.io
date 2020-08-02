@@ -2,12 +2,23 @@
 
 /* Mise en forme générale */
 
+body
+{
+	font-family: 'Josefin Sans', sans-serif;
+}
+
 .contenu
 {
 	margin: auto;
 	border: lightgrey 1px solid;
 	padding: 5px;
 	max-width: 1000px;
+}
+
+main
+{
+	display: flex;
+	flex-direction: column;
 }
 
 /* Définition des Couleurs de fond */
@@ -69,6 +80,19 @@
 	color: grey;
 }
 
+p a
+{
+	text-decoration: none;
+	color: yellowgreen;
+	width: 200px;
+}
+
+p a:hover
+{
+	background-color: yellowgreen;
+	color: white;
+}
+
 /* Modification de mise en page du texte */
 
 .align_center
@@ -76,15 +100,21 @@
 	text-align: center;
 }
 
-p:first-child
+.uppercase
 {
 	text-transform: uppercase;
 }
 
-footer p:first-child
+.align-left
 {
-	text-transform: none;
+	justify-content: flex-start;
 }
+
+.justify-center
+{
+	justify-content: center;
+}
+
 
 /* Définition de l'affichage des projets */
 
@@ -98,14 +128,62 @@ footer p:first-child
 .project_preview
 {
 	padding: 5px;
-	margin: 5px;
-    width: 200px;
-    height: 200px;
+	margin: 10px;
+    width: 130px;
+    height: 130px;
 }
 
 .project_link
 {
 	text-decoration: none;
+}
+
+/* Habillage des boites */
+
+.no-margin-top
+{
+	margin-top: 0px;
+}
+
+.no-margin
+{
+	margin: 0;
+}
+
+.margin-auto
+{
+	margin: auto;
+}
+
+
+.rounded
+{
+	border-radius: 20%;
+}
+
+.rounded-10
+{
+	border-radius: 10px;
+}
+
+.padding-10
+{
+	padding: 10px;
+}
+
+.margin-top-10
+{
+	margin-top: 10px;
+}
+
+.btn__retour
+{
+	background-color: yellowgreen;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	width: 200px;
+	text-align: center;
 }
 
 /* Modifications en fonction des tailles d'écran */
@@ -114,8 +192,8 @@ footer p:first-child
 {
 	.project_preview
 	{
-		width: 150px;
-		height: 150px;
+		width: 130px;
+		height: 130px;
 	}
 }
 
@@ -123,7 +201,7 @@ footer p:first-child
 {
 	.project_preview
 	{
-		width: 125px;
-		height: 125px;
+		width: 100px;
+		height: 100px;
 	}
 }
