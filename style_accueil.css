@@ -76,16 +76,16 @@
 	text-align: center;
 }
 
-.project p:first-child
+.uppercase
 {
 	text-transform: uppercase;
 }
 
-footer p:first-child
+.align-left
 {
-	text-transform: none;
-	padding: 10px 0;
+	justify-content: flex-start;
 }
+
 
 /* Définition de l'affichage des projets */
 
@@ -121,6 +121,26 @@ footer p:first-child
 	border-radius: 20%;
 }
 
+.rounded-10
+{
+	border-radius: 10px;
+}
+
+.padding-10
+{
+	padding: 10px;
+}
+
+.btn__retour
+{
+	background-color: yellowgreen;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	width: 200px;
+	text-align: center;
+	margin: 10px;
+}
 
 /* Modifications en fonction des tailles d'écran */
 
