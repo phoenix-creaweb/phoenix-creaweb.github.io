@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<title></title>
+	<title>ohmyfood, la webapp gastronimique</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style_ohmyfood.css">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="./style_ohmyfood.css">
 </head>
-<body>
-	<div class="container border">
-		<header>
-			<h1 class="text-ctrd">ohmyfood</h1>
+<body class="margin0">
+	<div class="container">
+		<header class="main-color txt-color">
+			<h1 class="text-ctrd margin-topbottom0 padding-middle">ohmyfood</h1>
 		</header>
 		<main>
 			<section class="menu">
-				<div class="btn border text-ctrd">
-					<p>Menu 1</p>
-				</div>
-				<div class="btn border text-ctrd">
-					<p>Menu 2</p>
-				</div>
-				<div class="btn border text-ctrd">
-					<p>Menu 3</p>
-				</div>
-				<div class="btn border text-ctrd">
-					<p>Menu 4</p>
-				</div>
+				<a href="./html/menu1.html">
+					<div class="btn border text-ctrd menu-color shadow">
+						<p>La Note<br>Enchantée</p>
+						<p>Menu</p>
+					</div>
+				</a>
+				<a href="./html/menu2.html">
+					<div class="btn border text-ctrd menu-color2 shadow">
+						<p>Menu 2</p>
+					</div>
+				</a>
+				<a href="./html/menu3.html">
+					<div class="btn border text-ctrd menu-color3 shadow">
+						<p>Menu 3</p>
+					</div>
+				</a>
+				<a href="./html/menu4.html">
+					<div class="btn border text-ctrd menu-color4 shadow">
+						<p>Menu 4</p>
+					</div>
+				</a>
 			</section>
 			<aside>
-				<div class="next text-ctrd">
+				<div class="btn-next text-ctrd main-color txt-color">
 					<p>Prochainement</p>
 				</div>
 			</aside>
 		</main>
-		<footer class="footer">
-			<div>
-				<p>Mentions légales</p>
+		<footer class="footer main-color">
+			<div class="padding-lr10">
+				<p><a href="./html/mentions.html" class="txt-color">Mentions légales</a></p>
 			</div>
-			<div>
-				<p>Contact</p>
+			<div class="padding-lr10">
+				<p><a href="mailto:contact@ohmyfood.miam?subject=Retour sur ohmyfood" class="txt-color">Contact</a></p>
 			</div>
 		</footer>
 	</div>
