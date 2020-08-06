@@ -13,10 +13,9 @@
 	border: grey 1px solid;
 }
 
-main
+.border-top1
 {
 	border-top: #A1C181 1px solid;
-	border-bottom: #A1C181 1px solid;
 }
 
 /* Définition des couleurs de base */
@@ -54,6 +53,9 @@ main
 {
 	display: flex;
 	justify-content: space-between;
+	width: 400px;
+	position: fixed;
+	bottom: 0;
 }
 
 /* Marges externes spécifiques */
@@ -93,6 +95,11 @@ main
 .padding-bottom10
 {
 	padding-bottom: 10px;
+}
+
+.padding-bottom80
+{
+	padding-bottom: 80px;
 }
 
 a
@@ -199,9 +206,14 @@ a
 
 .bloc__capsule
 {
-	display: flex;
+	
 }
 
+.menu__ligne
+{
+	display: flex;
+	justify-content: space-between;
+}
 
 
 @media all and (max-width: 800px)
