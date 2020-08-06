@@ -35,10 +35,25 @@ main
 	color: #FFF;
 }
 
-/* Centrage du texte */
+/* Modification du texte */
 .text-ctrd
 {
 	text-align: center;
+}
+
+.uppercase
+{
+	text-transform: uppercase;
+}
+
+/* L'en-tête du site */
+
+/* Le pied de page du site */
+
+.footer
+{
+	display: flex;
+	justify-content: space-between;
 }
 
 /* Marges externes spécifiques */
@@ -87,6 +102,7 @@ a
 
 /* Mise en forme des menus */
 
+/* Page d'accueil */
 .menu
 {
 	display: flex;
@@ -97,6 +113,26 @@ a
 .menu-color
 {
 	background: #FCDFDB;
+}
+
+.menu__titre
+{
+	font-family: 'Devonshire', cursive;
+}
+
+.menu__subtitle, .menu-details
+{
+	font-family: 'Comic Sans MS', cursive;
+}
+
+.menu-details
+{
+	font-size: 0.8em;
+}
+
+.menu-txt
+{
+	color: #3D1319;
 }
 
 .menu-color2
@@ -154,13 +190,19 @@ a
 	padding-top: 5px;
 }
 
-/* Le pied de page */
+/* Mise en forme de la page menu1 */
 
-.footer
+.bloc
+{
+
+}
+
+.bloc__capsule
 {
 	display: flex;
-	justify-content: space-between;
 }
+
+
 
 @media all and (max-width: 800px)
 {
