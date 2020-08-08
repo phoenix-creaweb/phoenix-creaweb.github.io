@@ -1,0 +1,36 @@
+// Définition des boutons
+
+// Chaque menu est un btn
+.btn
+{
+	width: 150px;
+	height: 210px;
+	margin: 10px;
+}
+
+// Animation des btn menu
+.menu a
+{
+	transition: 1s;
+}
+
+.menu a:hover
+{
+	font-size: 20px;
+}
+
+//  Le bouton prochainement
+.btn-next
+{
+	width: 200px;
+	height: 30px;
+	border-radius: 10px;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.btn-next p
+{
+	padding-top: 5px;
+}

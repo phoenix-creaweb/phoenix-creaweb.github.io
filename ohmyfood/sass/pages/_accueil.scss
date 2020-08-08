@@ -1,0 +1,56 @@
+// Particularités de la page d'accueil
+
+.menu-color
+{
+	background: $color-menu1-primary;
+}
+
+.menu__titre
+{
+	font-family: 'Devonshire', cursive;
+}
+
+.menu__subtitle, .menu-details
+{
+	font-family: 'Comic Sans MS', cursive;
+}
+
+.menu-details
+{
+	font-size: 0.8em;
+}
+
+.menu-txt
+{
+	color: $color-menu1-secondary;
+}
+
+.menu-color2
+{
+	background: #FFF5FE;
+}
+
+.menu-color3
+{
+	background: #F9F9F9;
+}
+
+.menu-color4
+{
+	background: #FDFFFD;
+}
+
+.shadow
+{
+	box-shadow: 2px 2px grey;
+}
+
+
+// Affichage des 4 menus
+
+.menu
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}

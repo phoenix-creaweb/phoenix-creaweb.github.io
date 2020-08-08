@@ -1,0 +1,20 @@
+// Définition des blocs de structure
+
+// Valables pour toutes les pages
+// Largeur de l'appli figée et centrée
+.container
+{
+	width: $width-site;
+	margin: auto;
+}
+
+// Pied de page en position figée en bas de page
+// flex space-between pour positionner les 2 éléments qu'il contient
+.footer
+{
+	display: flex;
+	justify-content: space-between;
+	width: $width-site;
+	position: fixed;
+	bottom: $gap-0;
+}
