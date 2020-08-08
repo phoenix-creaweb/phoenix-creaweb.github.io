@@ -27,22 +27,22 @@
 
 .menu-color2
 {
-	background: #FFF5FE;
+	background: $color-menu2-primary;
 }
 
 .menu-color3
 {
-	background: #F9F9F9;
+	background: $color-menu3-primary;
 }
 
 .menu-color4
 {
-	background: #FDFFFD;
+	background: $color-menu4-primary;
 }
 
 .shadow
 {
-	box-shadow: 2px 2px grey;
+	box-shadow: $size-XS $size-XS $color-shadow;
 }
 
 

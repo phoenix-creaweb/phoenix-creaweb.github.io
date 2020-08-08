@@ -1,11 +1,13 @@
 // Définition des blocs de structure
 
-// Valables pour toutes les pages
-// Largeur de l'appli figée et centrée
-.container
+// Les BEMs réutilisables sur toutes les pages
+
+// Le Haut de page
+
+header
 {
-	width: $width-site;
-	margin: auto;
+	background: $color-primary;
+	color: $color-secondary;
 }
 
 // Pied de page en position figée en bas de page
@@ -16,5 +18,13 @@
 	justify-content: space-between;
 	width: $width-site;
 	position: fixed;
-	bottom: $gap-0;
+	bottom: $size-0;
+}
+
+// Les menus individuels
+
+.menu__ligne
+{
+	display: flex;
+	justify-content: space-between;
 }

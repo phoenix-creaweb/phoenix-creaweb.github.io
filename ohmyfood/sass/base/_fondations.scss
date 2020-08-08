@@ -1,0 +1,117 @@
+// Fondations du site, polices, normalisation du site
+
+// Polices
+
+/* Les polices utilisées sont les suivantes:
+- pour le logo titre
+    ?
+- pour l'ensemble du site
+    ?
+- pour le menu 1:
+    Devonshire chez Google Fonts
+    Comic sans serif
+- pour le menu 2:
+    ?
+    ?
+- pour le menu 3:
+    ?
+    ?
+- pour le menu 4:
+    ?
+    ?
+*/
+
+// Largeur de l'appli figée et centrée
+.container
+{
+	width: $width-site;
+	margin: auto;
+}
+
+// Définition des bordures
+.border
+{
+	border: $color-shadow $size-XXS solid;
+}
+
+.border-top1
+{
+	border-top: $color-border $size-XS solid;
+}
+
+/* Modification du texte */
+.text-ctrd
+{
+	text-align: center;
+}
+
+.uppercase
+{
+	text-transform: uppercase;
+}
+
+// Définition des marges externes et internes
+
+.margin0
+{
+	margin: $size-0;
+}
+
+.margin-topbottom0
+{
+	margin-top: $size-0;
+	margin-bottom: $size-0;
+}
+
+.margin-top10
+{
+	margin-top: $size-M;
+}
+
+.margin-bottom10
+{
+	margin-bottom: $size-M;
+}
+
+.padding-middle
+{
+	padding: $size-M $size-0;
+}
+
+.padding-lr10
+{
+	padding: $size-0 $size-M;
+}
+
+.padding-bottom10
+{
+	padding-bottom: $size-M;
+}
+
+.padding-bottom80
+{
+	padding-bottom: $size-XL;
+}
+
+// Les liens
+
+a
+{
+	text-decoration: none;
+}
+
+// Les couleurs de l'interface
+.main-color
+{
+	background: $color-primary;
+}
+
+.txt-color
+{
+	color: $color-secondary;
+}
+
+.txt-color-active
+{
+	color: $color-active;
+}

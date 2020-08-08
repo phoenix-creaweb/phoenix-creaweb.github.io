@@ -24,13 +24,13 @@
 {
 	width: 200px;
 	height: 30px;
-	border-radius: 10px;
+	border-radius: $size-M;
 	text-align: center;
 	margin: auto;
-	margin-bottom: 10px;
+	margin-bottom: $size-M;
 }
 
 .btn-next p
 {
-	padding-top: 5px;
+	padding-top: $size-S;
 }
