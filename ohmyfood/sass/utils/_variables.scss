@@ -14,7 +14,9 @@
 
 // pour le menu 2
     $color-menu2-primary: #FFF5FE;
-    // $color-menu2-secondary: ;
+    $color-menu2-secondary: #c67412;
+    $color-menu2-secondary-b: #a56799;
+    $color-menu2-secondary-c: #6e4ccc;
 
 $color-menu3-primary: #F9F9F9;
 // $color-menu3-secondary: ;
@@ -35,7 +37,7 @@ $color-shadow: grey;
 
 // pour le menu 1:
     $ft1: 'Devonshire'; //chez Google Fonts
-    $ftx1: 'Arial';
+    $ftx1: 'Comic Sans MS';
 // pour le menu 2:
 
 // pour le menu 3:
@@ -74,7 +76,7 @@ $map-menu:(
     ),
     m2:(
         bg:$color-menu2-primary,
-        clr:$color-secondary,
+        clr:$color-menu2-secondary,
         ft: $ft1,
         ftx: $ftx1 
     ),

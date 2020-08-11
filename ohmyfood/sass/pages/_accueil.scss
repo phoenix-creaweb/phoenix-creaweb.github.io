@@ -1,56 +1,14 @@
-// Particularités de la page d'accueil
-
-.menu-color
-{
-	background: $color-menu1-primary;
-}
-
-.menu__titre
-{
-	font-family: 'Devonshire', cursive;
-}
-
-.menu__subtitle, .menu-details
-{
-	font-family: 'Comic Sans MS', cursive;
-}
-
-.menu-details
-{
-	font-size: 0.8em;
-}
-
-.menu-txt
-{
-	color: $color-menu1-secondary;
-}
-
-.menu-color2
-{
-	background: $color-menu2-primary;
-}
-
-.menu-color3
-{
-	background: $color-menu3-primary;
-}
-
-.menu-color4
-{
-	background: $color-menu4-primary;
-}
-
-.shadow
-{
-	box-shadow: $size-XS $size-XS $color-shadow;
-}
-
-
-// Affichage des 4 menus
+/* Affichage des 4 menus sur la page d'accueil */
 
 .menu
 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+}
+
+/* Définition de l'ombrage des menu de la page d'acceuil */
+.shadow
+{
+	box-shadow: $size-XS $size-XS $color-shadow;
 }

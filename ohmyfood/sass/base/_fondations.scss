@@ -1,9 +1,5 @@
 // Fondations du site, polices, normalisation du site
 
-// Polices
-
-
-
 /* Largeur de l'appli figée et centrée */
 .container
 {
@@ -84,17 +80,17 @@ a
 }
 
 /* Les couleurs de l'interface */
-.main-color
+.ui-color-main
 {
 	background: $color-primary;
 }
 
-.txt-color
+.ui-color-txt
 {
 	color: $color-secondary;
 }
 
-.txt-color-active
+.ui-color-txt-active
 {
 	color: $color-active;
 }
