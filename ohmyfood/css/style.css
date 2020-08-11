@@ -99,17 +99,11 @@ a {
   height: 210px;
   margin: 10px;
 }
-
-/* Animation des btn menu */
-.menu a {
-  transition: 1s;
+.btn__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-.menu a:hover {
-  font-size: 20px;
-}
-
-/*  Le bouton prochainement */
 .btn-next {
   width: 200px;
   height: 30px;
@@ -118,7 +112,6 @@ a {
   margin: auto;
   margin-bottom: 10px;
 }
-
 .btn-next p {
   padding-top: 5px;
 }
@@ -128,6 +121,12 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.menu a {
+  transition: 1s;
+}
+.menu a:hover {
+  font-size: 24px;
 }
 
 /* Définition de l'ombrage des menu de la page d'acceuil */
@@ -143,30 +142,85 @@ a {
 }
 .menu-m1__title {
   font-family: "Devonshire";
+  color: #3D1319;
+}
+.menu-m1__entree {
+  color: #3D1319;
+  font-size: 10px;
+}
+.menu-m1__plat {
+  color: #3D1319;
+  font-size: 10px;
+}
+.menu-m1__dessert {
+  color: #3D1319;
+  font-size: 10px;
 }
 .menu-m2 {
   background-color: #FFF5FE;
   color: #c67412;
-  font-family: "Comic Sans MS";
+  font-family: "Noto Serif";
 }
 .menu-m2__title {
-  font-family: "Devonshire";
+  font-family: "Croissant One";
+  color: #c67412;
+}
+.menu-m2__entree {
+  color: #c67412;
+  font-size: 10px;
+}
+.menu-m2__plat {
+  color: #a56799;
+  font-size: 10px;
+}
+.menu-m2__dessert {
+  color: #6e4ccc;
+  font-size: 10px;
 }
 .menu-m3 {
   background-color: #F9F9F9;
-  color: #FDCB46;
-  font-family: "Comic Sans MS";
+  color: #000000;
+  font-family: "Segoe Print";
 }
 .menu-m3__title {
-  font-family: "Devonshire";
+  font-family: "Dancing Script";
+  color: #000000;
+}
+.menu-m3__subtitle {
+  color: #229df9;
+}
+.menu-m3__entree {
+  color: #000000;
+  font-size: 10px;
+}
+.menu-m3__plat {
+  color: #000000;
+  font-size: 10px;
+}
+.menu-m3__dessert {
+  color: #000000;
+  font-size: 10px;
 }
 .menu-m4 {
   background-color: #FDFFFD;
-  color: #FDCB46;
+  color: #000000;
   font-family: "Comic Sans MS";
 }
 .menu-m4__title {
   font-family: "Devonshire";
+  color: #000000;
+}
+.menu-m4__entree {
+  color: #000000;
+  font-size: 10px;
+}
+.menu-m4__plat {
+  color: #000000;
+  font-size: 10px;
+}
+.menu-m4__dessert {
+  color: #000000;
+  font-size: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

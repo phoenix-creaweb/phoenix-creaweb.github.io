@@ -4,14 +4,34 @@
  {
     @each $menu, $argument in $map-menu
     {
-        &-#{$menu}
+        &-#{$menu} // génération du selecteur -mx
         {
             background-color: map-get($map: $argument, $key: bg);
-            color: map-get($map: $argument, $key: clr);
+            color: map-get($map: $argument, $key: clr-base);
             font-family: map-get($map: $argument, $key: ftx);
             &__title
             {
                 font-family: map-get($map: $argument, $key: ft);
+                color: map-get($map: $argument, $key: clr-base);
+            }
+            &__subtitle
+            {
+                color: map-get($map: $argument, $key: clr-subtitle);
+            }
+            &__entree
+            {
+                color: map-get($map: $argument, $key: clr-entree);
+                font-size: map-get($map: $argument, $key: ftx-size);
+            }
+            &__plat
+            {
+                color: map-get($map: $argument, $key: clr-plat);
+                font-size: map-get($map: $argument, $key: ftx-size);
+            }
+            &__dessert
+            {
+                color: map-get($map: $argument, $key: clr-dessert);
+                font-size: map-get($map: $argument, $key: ftx-size);
             }
         }
     }

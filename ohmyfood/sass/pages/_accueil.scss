@@ -5,6 +5,14 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	a
+		{
+			transition: 1s;
+		&:hover
+			{
+				font-size: $size-L*1.2;
+			}
+		}
 }
 
 /* Définition de l'ombrage des menu de la page d'acceuil */
@@ -12,3 +20,4 @@
 {
 	box-shadow: $size-XS $size-XS $color-shadow;
 }
+

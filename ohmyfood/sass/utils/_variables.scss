@@ -18,13 +18,20 @@
     $color-menu2-secondary-b: #a56799;
     $color-menu2-secondary-c: #6e4ccc;
 
-$color-menu3-primary: #F9F9F9;
-// $color-menu3-secondary: ;
+// pour le menu 3
+    $color-menu3-primary: #F9F9F9;
+    $color-menu3-secondary: #000000;
+    $color-menu3-deco-a: #0228dd;
+    $color-menu3-deco-b: #0670f3;
+    $color-menu3-deco-c: #229df9;
 
-$color-menu4-primary: #FDFFFD;
-// $color-menu4-secondary: ;
+// pour le menu 4
+    $color-menu4-primary: #FDFFFD;
+    $color-menu4-secondary: #000000;
+    $color-menu4-deco: #72bf56;
 
-$color-shadow: grey;
+// pour les bordures et ombrages
+    $color-shadow: grey;
 
 // Définition des dimensions
 // largeur du site
@@ -33,63 +40,86 @@ $color-shadow: grey;
 // Définition des polices de caractère
 // pour le logo titre
 
-// pour l'ensemble du site
 
 // pour le menu 1:
     $ft1: 'Devonshire'; //chez Google Fonts
     $ftx1: 'Comic Sans MS';
 // pour le menu 2:
-
+    $ft2: 'Croissant One'; //chez Google Fonts
+    $ftx2: 'Noto Serif';
 // pour le menu 3:
-
+    $ft3: 'Dancing Script'; //chez Google Fonts
+    $ftx3: 'Segoe Print';
 // pour le menu 4:
-
+    $ft4: 'Devonshire'; //chez Google Fonts
+    $ftx4: 'Comic Sans MS';
 // Définition des valeurs de marges internes/externes
 
 $size-0: 0;
-
 $size-XXS: 1px;
-
 $size-XS: 2px;
-
 $size-S: 5px;
-
 $size-M: 10px;
-
 $size-L: 20px;
-
-$size-XL: 80px;
+$size-XL: 40px;
+$size-XXL: 80px;
 
 // Définition du mapping de la mise en forme des menus
 // Chaque menu se caractérise par
-// - bg:      une couleur de fond
-// - clr:     une couleur de texte
-// - ft:      une police de caractères pour le titre
-// - ftx:     une police de caractère pour le texte
+// - bg:            une couleur de fond
+// - clr-base:      une couleur de texte par défaut
+// - clr-entree:    une couleur de texte pour les entrées
+// - clr-plat:      une couleur de texte pour les plats principaux
+// - clr-dessert:   une couleur de texte pour les desserts
+// - ft:            une police de caractères pour le titre
+// - ft-size:       une taille de police de caractères pour le titre
+// - ftx:           une police de caractère pour le texte
+// - ftx-size:      une taille de police de caractères pour le titre
 
 $map-menu:(
     m1:(
         bg: $color-menu1-primary,
-        clr: $color-menu1-secondary,
+        clr-base: $color-menu1-secondary,
+        clr-entree: $color-menu1-secondary,
+        clr-plat: $color-menu1-secondary,
+        clr-dessert: $color-menu1-secondary,
         ft: $ft1,
-        ftx: $ftx1    
+        ft-size: $size-L,
+        ftx: $ftx1,
+        ftx-size: $size-M
     ),
     m2:(
-        bg:$color-menu2-primary,
-        clr:$color-menu2-secondary,
-        ft: $ft1,
-        ftx: $ftx1 
+        bg: $color-menu2-primary,
+        clr-base: $color-menu2-secondary,
+        clr-entree: $color-menu2-secondary,
+        clr-plat: $color-menu2-secondary-b,
+        clr-dessert: $color-menu2-secondary-c,
+        ft: $ft2,
+        ft-size: $size-L,
+        ftx: $ftx2,
+        ftx-size: $size-M
     ),
     m3:(
-        bg:$color-menu3-primary,
-        clr:$color-secondary,
-        ft: $ft1,
-        ftx: $ftx1  
+        bg: $color-menu3-primary,
+        clr-base: $color-menu3-secondary,
+        clr-entree: $color-menu3-secondary,
+        clr-plat: $color-menu3-secondary,
+        clr-dessert: $color-menu3-secondary,
+        clr-subtitle: $color-menu3-deco-c,
+        ft: $ft3,
+        ft-size: $size-L,
+        ftx: $ftx3,
+        ftx-size: $size-M
     ),
     m4:(
-        bg:$color-menu4-primary,
-        clr:$color-secondary,
-        ft: $ft1,
-        ftx: $ftx1
+        bg: $color-menu4-primary,
+        clr-base: $color-menu4-secondary,
+        clr-entree: $color-menu4-secondary,
+        clr-plat: $color-menu4-secondary,
+        clr-dessert: $color-menu4-secondary,
+        ft: $ft4,
+        ft-size: $size-L,
+        ftx: $ftx4,
+        ftx-size: $size-M
     )
 )

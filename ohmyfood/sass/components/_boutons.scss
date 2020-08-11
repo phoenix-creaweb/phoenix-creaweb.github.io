@@ -6,31 +6,24 @@
 	width: 150px;
 	height: 210px;
 	margin: 10px;
+	&__content
+	{
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	&-next
+	{
+		width: $width-site/2;
+		height: 30px;
+		border-radius: $size-M;
+		text-align: center;
+		margin: auto;
+		margin-bottom: $size-M;
+		p
+			{
+				padding-top: $size-S;
+			}
+	}
 }
 
-/* Animation des btn menu */
-.menu a
-{
-	transition: 1s;
-}
-
-.menu a:hover
-{
-	font-size: 20px;
-}
-
-/*  Le bouton prochainement */
-.btn-next
-{
-	width: $width-site/2;
-	height: 30px;
-	border-radius: $size-M;
-	text-align: center;
-	margin: auto;
-	margin-bottom: $size-M;
-}
-
-.btn-next p
-{
-	padding-top: $size-S;
-}
