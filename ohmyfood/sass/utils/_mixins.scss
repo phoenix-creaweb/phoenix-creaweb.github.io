@@ -1,0 +1,21 @@
+// génération du code pour formatter les menus
+
+@mixin format-menu ($menu)
+ {
+    @each $menu, $argument in $map-menu
+    {
+        &-#{$menu}
+        {
+            background-color: map-get($map: $argument, $key: bg);
+            color: map-get($map: $argument, $key: clr);
+            &__title
+            {
+                font-family: map-get($map: $argument, $key: ft);
+            }
+            &__txt
+            {
+                font-family: map-get($map: $argument, $key: ftx);
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+// Génération des sélecteurs pour mise en page des menus
+
+/* Définition du format des menus */
+.format
+{
+    @include format-menu($map-menu);
+}

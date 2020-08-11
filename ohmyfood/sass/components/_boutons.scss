@@ -1,6 +1,6 @@
 // Définition des boutons
 
-// Chaque menu est un btn
+/* Chaque menu est un btn */
 .btn
 {
 	width: 150px;
@@ -8,7 +8,7 @@
 	margin: 10px;
 }
 
-// Animation des btn menu
+/* Animation des btn menu */
 .menu a
 {
 	transition: 1s;
@@ -19,10 +19,10 @@
 	font-size: 20px;
 }
 
-//  Le bouton prochainement
+/*  Le bouton prochainement */
 .btn-next
 {
-	width: 200px;
+	width: $width-site/2;
 	height: 30px;
 	border-radius: $size-M;
 	text-align: center;

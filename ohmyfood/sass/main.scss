@@ -1,11 +1,9 @@
 // script de concaténation des partiels
 @import "./utils/variables";
+@import "./utils/mixins";
 @import "./layouts/blocs";
 @import "./base/fondations";
 @import "./components/boutons";
 @import "./pages/accueil";
 @import "./pages/mentions";
-@import "./pages/menu1";
-@import "./pages/menu2";
-@import "./pages/menu3";
-@import "./pages/menu4";
+@import "./pages/menus";
