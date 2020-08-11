@@ -8,13 +8,10 @@
         {
             background-color: map-get($map: $argument, $key: bg);
             color: map-get($map: $argument, $key: clr);
+            font-family: map-get($map: $argument, $key: ftx);
             &__title
             {
                 font-family: map-get($map: $argument, $key: ft);
-            }
-            &__txt
-            {
-                font-family: map-get($map: $argument, $key: ftx);
             }
         }
     }
