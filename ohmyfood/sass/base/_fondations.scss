@@ -1,5 +1,12 @@
 // Fondations du site, polices, normalisation du site
 
+body
+{
+	font-family: $ft-ui;
+	margin: $size-0;
+}
+
+
 /* Largeur de l'appli figée et centrée */
 .container
 {
@@ -15,9 +22,13 @@
 
 .border-top1
 {
-	border-top: $color-border $size-XS solid;
+	border-top: $color-border $size-XXS solid;
 }
 
+.border-bottom1
+{
+	border-bottom: $color-border $size-XXS solid;
+}
 /* Modification du texte */
 .text-ctrd
 {
@@ -52,6 +63,11 @@
 	margin-bottom: $size-M;
 }
 
+.margin20
+{
+	margin: $size-L;
+}
+
 .padding-middle
 {
 	padding: $size-M $size-0;
@@ -67,9 +83,9 @@
 	padding-bottom: $size-M;
 }
 
-.padding-bottom80
+.padding-bottomL
 {
-	padding-bottom: $size-XXL;
+	padding-bottom: $size-L;
 }
 
 /* Les liens */

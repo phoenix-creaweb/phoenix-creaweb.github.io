@@ -17,21 +17,37 @@
             &__subtitle
             {
                 color: map-get($map: $argument, $key: clr-subtitle);
+                font-family: map-get($map: $argument, $key: ftx);
             }
             &__entree
             {
                 color: map-get($map: $argument, $key: clr-entree);
                 font-size: map-get($map: $argument, $key: ftx-size);
+                &-titre
+                {
+                    display: flex;
+                    justify-content: space-between;
+                }
             }
             &__plat
             {
                 color: map-get($map: $argument, $key: clr-plat);
                 font-size: map-get($map: $argument, $key: ftx-size);
+                &-titre
+                {
+                    display: flex;
+                    justify-content: space-between;
+                }
             }
             &__dessert
             {
                 color: map-get($map: $argument, $key: clr-dessert);
                 font-size: map-get($map: $argument, $key: ftx-size);
+                &-titre
+                {
+                    display: flex;
+                    justify-content: space-between;
+                }
             }
         }
     }

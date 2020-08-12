@@ -35,11 +35,11 @@
 
 // Définition des dimensions
 // largeur du site
-    $width-site: 400px;
+    $width-site: 480px;
 
 // Définition des polices de caractère
-// pour le logo titre
-
+// pour le site
+    $ft-ui: 'Arial';
 
 // pour le menu 1:
     $ft1: 'Devonshire'; //chez Google Fonts
@@ -51,8 +51,8 @@
     $ft3: 'Dancing Script'; //chez Google Fonts
     $ftx3: 'Segoe Print';
 // pour le menu 4:
-    $ft4: 'Devonshire'; //chez Google Fonts
-    $ftx4: 'Comic Sans MS';
+    $ft4: 'Kaushan Script'; //chez Google Fonts
+    $ftx4: 'Segoe Print';
 // Définition des valeurs de marges internes/externes
 
 $size-0: 0;
@@ -86,7 +86,7 @@ $map-menu:(
         ft: $ft1,
         ft-size: $size-L,
         ftx: $ftx1,
-        ftx-size: $size-M
+        ftx-size: $size-M*.8
     ),
     m2:(
         bg: $color-menu2-primary,

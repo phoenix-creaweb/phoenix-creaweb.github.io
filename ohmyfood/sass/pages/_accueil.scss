@@ -5,12 +5,13 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	a
+	p
 		{
 			transition: 1s;
+			transform: scale(1);
 		&:hover
 			{
-				font-size: $size-L*1.2;
+				transform: scale(1.2);
 			}
 		}
 }

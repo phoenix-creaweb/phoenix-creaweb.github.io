@@ -1,25 +1,12 @@
 @charset "UTF-8";
-header {
-  background: #569C87;
-  color: #FDCB46;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  width: 400px;
-  position: fixed;
-  bottom: 0;
-}
-
-.menu__ligne {
-  display: flex;
-  justify-content: space-between;
+body {
+  font-family: "Arial";
+  margin: 0;
 }
 
 /* Largeur de l'appli figée et centrée */
 .container {
-  width: 400px;
+  width: 480px;
   margin: auto;
 }
 
@@ -29,7 +16,11 @@ header {
 }
 
 .border-top1 {
-  border-top: #A1C181 2px solid;
+  border-top: #A1C181 1px solid;
+}
+
+.border-bottom1 {
+  border-bottom: #A1C181 1px solid;
 }
 
 /* Modification du texte */
@@ -59,6 +50,10 @@ header {
   margin-bottom: 10px;
 }
 
+.margin20 {
+  margin: 20px;
+}
+
 .padding-middle {
   padding: 10px 0;
 }
@@ -71,8 +66,8 @@ header {
   padding-bottom: 10px;
 }
 
-.padding-bottom80 {
-  padding-bottom: 80px;
+.padding-bottomL {
+  padding-bottom: 20px;
 }
 
 /* Les liens */
@@ -93,6 +88,25 @@ a {
   color: #FFFFFF;
 }
 
+header {
+  background: #569C87;
+  color: #FDCB46;
+  font-family: "Arial";
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 480px;
+  position: fixed;
+  bottom: 0;
+}
+
+.menu__ligne {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Chaque menu est un btn */
 .btn {
   width: 150px;
@@ -105,7 +119,7 @@ a {
   justify-content: center;
 }
 .btn-next {
-  width: 200px;
+  width: 240px;
   height: 30px;
   border-radius: 10px;
   text-align: center;
@@ -122,11 +136,12 @@ a {
   flex-wrap: wrap;
   justify-content: center;
 }
-.menu a {
+.menu p {
   transition: 1s;
+  transform: scale(1);
 }
-.menu a:hover {
-  font-size: 24px;
+.menu p:hover {
+  transform: scale(1.2);
 }
 
 /* Définition de l'ombrage des menu de la page d'acceuil */
@@ -144,17 +159,32 @@ a {
   font-family: "Devonshire";
   color: #3D1319;
 }
+.menu-m1__subtitle {
+  font-family: "Comic Sans MS";
+}
 .menu-m1__entree {
   color: #3D1319;
-  font-size: 10px;
+  font-size: 8px;
+}
+.menu-m1__entree-titre {
+  display: flex;
+  justify-content: space-between;
 }
 .menu-m1__plat {
   color: #3D1319;
-  font-size: 10px;
+  font-size: 8px;
+}
+.menu-m1__plat-titre {
+  display: flex;
+  justify-content: space-between;
 }
 .menu-m1__dessert {
   color: #3D1319;
-  font-size: 10px;
+  font-size: 8px;
+}
+.menu-m1__dessert-titre {
+  display: flex;
+  justify-content: space-between;
 }
 .menu-m2 {
   background-color: #FFF5FE;
@@ -165,17 +195,32 @@ a {
   font-family: "Croissant One";
   color: #c67412;
 }
+.menu-m2__subtitle {
+  font-family: "Noto Serif";
+}
 .menu-m2__entree {
   color: #c67412;
   font-size: 10px;
+}
+.menu-m2__entree-titre {
+  display: flex;
+  justify-content: space-between;
 }
 .menu-m2__plat {
   color: #a56799;
   font-size: 10px;
 }
+.menu-m2__plat-titre {
+  display: flex;
+  justify-content: space-between;
+}
 .menu-m2__dessert {
   color: #6e4ccc;
   font-size: 10px;
+}
+.menu-m2__dessert-titre {
+  display: flex;
+  justify-content: space-between;
 }
 .menu-m3 {
   background-color: #F9F9F9;
@@ -188,39 +233,74 @@ a {
 }
 .menu-m3__subtitle {
   color: #229df9;
+  font-family: "Segoe Print";
 }
 .menu-m3__entree {
   color: #000000;
   font-size: 10px;
 }
+.menu-m3__entree-titre {
+  display: flex;
+  justify-content: space-between;
+}
 .menu-m3__plat {
   color: #000000;
   font-size: 10px;
+}
+.menu-m3__plat-titre {
+  display: flex;
+  justify-content: space-between;
 }
 .menu-m3__dessert {
   color: #000000;
   font-size: 10px;
 }
+.menu-m3__dessert-titre {
+  display: flex;
+  justify-content: space-between;
+}
 .menu-m4 {
   background-color: #FDFFFD;
   color: #000000;
-  font-family: "Comic Sans MS";
+  font-family: "Segoe Print";
 }
 .menu-m4__title {
-  font-family: "Devonshire";
+  font-family: "Kaushan Script";
   color: #000000;
+}
+.menu-m4__subtitle {
+  font-family: "Segoe Print";
 }
 .menu-m4__entree {
   color: #000000;
   font-size: 10px;
 }
+.menu-m4__entree-titre {
+  display: flex;
+  justify-content: space-between;
+}
 .menu-m4__plat {
   color: #000000;
   font-size: 10px;
 }
+.menu-m4__plat-titre {
+  display: flex;
+  justify-content: space-between;
+}
 .menu-m4__dessert {
   color: #000000;
   font-size: 10px;
+}
+.menu-m4__dessert-titre {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deco-left, .deco-right {
+  background: #3D1319;
+  border: 10px solid #FCDFDB;
+  border-radius: 20px 200px;
+  width: 33%;
 }
 
 /*# sourceMappingURL=style.css.map */
