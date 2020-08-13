@@ -13,12 +13,17 @@
             &__title // génération du selecteur -mx__title
             {
                 font-family: map-get($map: $argument, $key: ft);
-                color: map-get($map: $argument, $key: clr-base);
+                font-size: map-get($map: $argument, $key: ft-size);
+                background: linear-gradient(90deg, map-get($argument, clr-grad-a), map-get($argument, clr-grad-b));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                //color: linear-gradient(map-get($map: $argument, $key: clr-grad-a) map-get($map:$argument, $key: clr-grad-b));
             }
             &__subtitle // génération du selecteur -mx__subtitle
             {
                 color: map-get($map: $argument, $key: clr-subtitle);
                 font-family: map-get($map: $argument, $key: ftx);
+                -webkit-text-fill-color: map-get($map: $argument, $key: clr-subtitle);
             }
             &__entree // génération du selecteur -mx__entree
             {
@@ -34,6 +39,7 @@
                         border-bottom: $size-XXS solid map-get($map: $argument, $key: bg);
                         &:hover
                         {
+                            transition:1s;
                             border-bottom: $size-XXS solid map-get($map: $argument, $key: clr-entree);
                         }
                     }
@@ -69,6 +75,7 @@
                         border-bottom: $size-XXS solid map-get($map: $argument, $key: bg);
                         &:hover
                         {
+                            transition:1s;
                             border-bottom: $size-XXS solid map-get($map: $argument, $key: clr-plat);
                         }
                     }
@@ -102,6 +109,7 @@
                         border-bottom: $size-XXS solid map-get($map: $argument, $key: bg);
                         &:hover
                         {
+                            transition:1s;
                             border-bottom: $size-XXS solid map-get($map: $argument, $key: clr-dessert);
                         }
                     }
@@ -126,3 +134,26 @@
     }
 }
 
+@mixin format-btn-accueil ($menu)
+ {
+    @each $menu, $argument in $map-menu
+    {
+        &-#{$menu} // génération du selecteur -mx
+        {
+            &__title // génération du selecteur -mx__title
+            {
+                font-family: map-get($map: $argument, $key: ft);
+                font-size: $size-ML;
+                background: linear-gradient(90deg, map-get($argument, clr-grad-a), map-get($argument, clr-grad-b));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            &__subtitle // génération du selecteur -mx__subtitle
+            {
+                color: map-get($map: $argument, $key: clr-subtitle);
+                font-family: map-get($map: $argument, $key: ftx);
+                -webkit-text-fill-color: map-get($map: $argument, $key: clr-subtitle);
+            }
+        }
+    }
+}  

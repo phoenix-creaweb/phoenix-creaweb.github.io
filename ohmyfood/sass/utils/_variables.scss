@@ -11,12 +11,16 @@
 // pour le menu 1
     $color-menu1-primary: #FCDFDB;
     $color-menu1-secondary: #3D1319;
+    $color-menu1-gradient-a: $color-menu1-secondary;
+    $color-menu1-gradient-b: $color-menu1-secondary;
 
 // pour le menu 2
     $color-menu2-primary: #FFF5FE;
     $color-menu2-secondary: #c67412;
     $color-menu2-secondary-b: #a56799;
     $color-menu2-secondary-c: #6e4ccc;
+    $color-menu2-gradient-a: $color-menu2-secondary;
+    $color-menu2-gradient-b: $color-menu2-secondary-c;
 
 // pour le menu 3
     $color-menu3-primary: #F9F9F9;
@@ -24,11 +28,16 @@
     $color-menu3-deco-a: #0228dd;
     $color-menu3-deco-b: #0670f3;
     $color-menu3-deco-c: #229df9;
+    $color-menu3-gradient-a: $color-menu3-deco-a;
+    $color-menu3-gradient-b: $color-menu3-deco-c;
 
 // pour le menu 4
     $color-menu4-primary: #FDFFFD;
     $color-menu4-secondary: #000000;
-    $color-menu4-deco: #72bf56;
+    $color-menu4-deco-a: #72bf56;
+    $color-menu4-deco-b: #beff7f;
+    $color-menu4-gradient-a: $color-menu4-deco-a;
+    $color-menu4-gradient-b: $color-menu4-deco-b;
 
 // pour les bordures et ombrages
     $color-shadow: grey;
@@ -62,6 +71,7 @@
     $size-XS: 2px;
     $size-S: 5px;
     $size-M: 10px;
+    $size-ML: 16px;
     $size-L: 20px;
     $size-XL: 40px;
     $size-XXL: 80px;
@@ -88,8 +98,10 @@ $map-menu:(
         clr-entree-deco: $color-menu1-secondary,
         clr-plat-deco: $color-menu1-secondary,
         clr-dessert-deco: $color-menu1-secondary,
+        clr-grad-a: $color-menu1-gradient-a,
+        clr-grad-b: $color-menu1-gradient-b,
         ft: $ft1,
-        ft-size: $size-L,
+        ft-size: $size-M + $size-L,
         ftx: $ftx1,
         ftx-size: $size-M,
     ),
@@ -102,6 +114,9 @@ $map-menu:(
         clr-entree-deco: $color-menu2-secondary,
         clr-plat-deco: $color-menu2-secondary-b,
         clr-dessert-deco: $color-menu2-secondary-c,
+        clr-subtitle: $color-menu2-secondary,
+        clr-grad-a: $color-menu2-gradient-a,
+        clr-grad-b: $color-menu2-gradient-b,
         ft: $ft2,
         ft-size: $size-L,
         ftx: $ftx2,
@@ -117,8 +132,10 @@ $map-menu:(
         clr-plat-deco: $color-menu3-deco-b,
         clr-dessert-deco: $color-menu3-deco-c,
         clr-subtitle: $color-menu3-deco-c,
+        clr-grad-a: $color-menu3-gradient-a,
+        clr-grad-b: $color-menu3-gradient-b,
         ft: $ft3,
-        ft-size: $size-L,
+        ft-size: $size-M + $size-L,
         ftx: $ftx3,
         ftx-size: $size-M
     ),
@@ -128,11 +145,14 @@ $map-menu:(
         clr-entree: $color-menu4-secondary,
         clr-plat: $color-menu4-secondary,
         clr-dessert: $color-menu4-secondary,
-        clr-entree-deco: $color-menu4-deco,
-        clr-plat-deco: $color-menu4-deco,
-        clr-dessert-deco: $color-menu4-deco,
+        clr-entree-deco: $color-menu4-deco-a,
+        clr-plat-deco: $color-menu4-deco-a,
+        clr-dessert-deco: $color-menu4-deco-a,
+        clr-subtitle: $color-menu4-deco-a,
+        clr-grad-a: $color-menu4-gradient-a,
+        clr-grad-b: $color-menu4-gradient-b,
         ft: $ft4,
-        ft-size: $size-L,
+        ft-size: $size-M + $size-L,
         ftx: $ftx4,
         ftx-size: $size-M
     )

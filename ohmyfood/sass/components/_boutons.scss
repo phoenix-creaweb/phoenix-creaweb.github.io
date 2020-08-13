@@ -12,6 +12,9 @@
 		flex-direction: column;
 		justify-content: center;
 	}
+
+	@include format-btn-accueil ($map-menu);
+
 	&-next
 	{
 		width: $width-site/2;

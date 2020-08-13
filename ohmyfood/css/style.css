@@ -144,6 +144,52 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   flex-direction: column;
   justify-content: center;
 }
+.btn-m1__title {
+  font-family: "Devonshire";
+  font-size: 16px;
+  background: linear-gradient(90deg, #3D1319, #3D1319);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn-m1__subtitle {
+  font-family: "Comic Sans MS";
+}
+.btn-m2__title {
+  font-family: "Croissant One";
+  font-size: 16px;
+  background: linear-gradient(90deg, #c67412, #6e4ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn-m2__subtitle {
+  color: #c67412;
+  font-family: "Noto Serif";
+  -webkit-text-fill-color: #c67412;
+}
+.btn-m3__title {
+  font-family: "Dancing Script";
+  font-size: 16px;
+  background: linear-gradient(90deg, #0228dd, #229df9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn-m3__subtitle {
+  color: #229df9;
+  font-family: "Segoe Print";
+  -webkit-text-fill-color: #229df9;
+}
+.btn-m4__title {
+  font-family: "Kaushan Script";
+  font-size: 16px;
+  background: linear-gradient(90deg, #72bf56, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn-m4__subtitle {
+  color: #72bf56;
+  font-family: "Segoe Print";
+  -webkit-text-fill-color: #72bf56;
+}
 .btn-next {
   width: 240px;
   height: 30px;
@@ -180,7 +226,10 @@ flex space-between pour positionner les 2 éléments qu'il contient */
 }
 .menu-m1__title {
   font-family: "Devonshire";
-  color: #3D1319;
+  font-size: 30px;
+  background: linear-gradient(90deg, #3D1319, #3D1319);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu-m1__subtitle {
   font-family: "Comic Sans MS";
@@ -197,6 +246,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #FCDFDB;
 }
 .menu-m1__entree-titre p:hover {
+  transition: 1s;
   border-bottom: 1px solid #3D1319;
 }
 .menu-m1__entree-titre .deco-left {
@@ -223,6 +273,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #FCDFDB;
 }
 .menu-m1__plat-titre p:hover {
+  transition: 1s;
   border-bottom: 1px solid #3D1319;
 }
 .menu-m1__plat-titre .deco-left {
@@ -249,6 +300,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #FCDFDB;
 }
 .menu-m1__dessert-titre p:hover {
+  transition: 1s;
   border-bottom: 1px solid #3D1319;
 }
 .menu-m1__dessert-titre .deco-left {
@@ -270,10 +322,15 @@ flex space-between pour positionner les 2 éléments qu'il contient */
 }
 .menu-m2__title {
   font-family: "Croissant One";
-  color: #c67412;
+  font-size: 20px;
+  background: linear-gradient(90deg, #c67412, #6e4ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu-m2__subtitle {
+  color: #c67412;
   font-family: "Noto Serif";
+  -webkit-text-fill-color: #c67412;
 }
 .menu-m2__entree {
   color: #c67412;
@@ -287,6 +344,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #FFF5FE;
 }
 .menu-m2__entree-titre p:hover {
+  transition: 1s;
   border-bottom: 1px solid #c67412;
 }
 .menu-m2__entree-titre .deco-left {
@@ -313,6 +371,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #FFF5FE;
 }
 .menu-m2__plat-titre p:hover {
+  transition: 1s;
   border-bottom: 1px solid #a56799;
 }
 .menu-m2__plat-titre .deco-left {
@@ -339,6 +398,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #FFF5FE;
 }
 .menu-m2__dessert-titre p:hover {
+  transition: 1s;
   border-bottom: 1px solid #6e4ccc;
 }
 .menu-m2__dessert-titre .deco-left {
@@ -360,11 +420,15 @@ flex space-between pour positionner les 2 éléments qu'il contient */
 }
 .menu-m3__title {
   font-family: "Dancing Script";
-  color: #000000;
+  font-size: 30px;
+  background: linear-gradient(90deg, #0228dd, #229df9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu-m3__subtitle {
   color: #229df9;
   font-family: "Segoe Print";
+  -webkit-text-fill-color: #229df9;
 }
 .menu-m3__entree {
   color: #000000;
@@ -378,6 +442,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #F9F9F9;
 }
 .menu-m3__entree-titre p:hover {
+  transition: 1s;
   border-bottom: 1px solid #000000;
 }
 .menu-m3__entree-titre .deco-left {
@@ -404,6 +469,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #F9F9F9;
 }
 .menu-m3__plat-titre p:hover {
+  transition: 1s;
   border-bottom: 1px solid #000000;
 }
 .menu-m3__plat-titre .deco-left {
@@ -430,6 +496,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #F9F9F9;
 }
 .menu-m3__dessert-titre p:hover {
+  transition: 1s;
   border-bottom: 1px solid #000000;
 }
 .menu-m3__dessert-titre .deco-left {
@@ -451,10 +518,15 @@ flex space-between pour positionner les 2 éléments qu'il contient */
 }
 .menu-m4__title {
   font-family: "Kaushan Script";
-  color: #000000;
+  font-size: 30px;
+  background: linear-gradient(90deg, #72bf56, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu-m4__subtitle {
+  color: #72bf56;
   font-family: "Segoe Print";
+  -webkit-text-fill-color: #72bf56;
 }
 .menu-m4__entree {
   color: #000000;
@@ -468,6 +540,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #FDFFFD;
 }
 .menu-m4__entree-titre p:hover {
+  transition: 1s;
   border-bottom: 1px solid #000000;
 }
 .menu-m4__entree-titre .deco-left {
@@ -494,6 +567,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #FDFFFD;
 }
 .menu-m4__plat-titre p:hover {
+  transition: 1s;
   border-bottom: 1px solid #000000;
 }
 .menu-m4__plat-titre .deco-left {
@@ -520,6 +594,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #FDFFFD;
 }
 .menu-m4__dessert-titre p:hover {
+  transition: 1s;
   border-bottom: 1px solid #000000;
 }
 .menu-m4__dessert-titre .deco-left {
