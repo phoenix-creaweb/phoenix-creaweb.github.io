@@ -1,4 +1,4 @@
-// génération du code pour formatter les menus
+// génération du code pour formatter les menus (couleurs de fond, polices, ...)
 
 @mixin format-menu ($menu)
  {
@@ -9,26 +9,45 @@
             background-color: map-get($map: $argument, $key: bg);
             color: map-get($map: $argument, $key: clr-base);
             font-family: map-get($map: $argument, $key: ftx);
-            &__title
+            
+            &__title // génération du selecteur -mx__title
             {
                 font-family: map-get($map: $argument, $key: ft);
                 color: map-get($map: $argument, $key: clr-base);
             }
-            &__subtitle
+            &__subtitle // génération du selecteur -mx__subtitle
             {
                 color: map-get($map: $argument, $key: clr-subtitle);
                 font-family: map-get($map: $argument, $key: ftx);
             }
-            &__entree
+            &__entree // génération du selecteur -mx__entree
             {
                 color: map-get($map: $argument, $key: clr-entree);
                 font-size: map-get($map: $argument, $key: ftx-size);
-                &-titre
+                
+                &-titre // génération du selecteur -mx__entree-titre
                 {
                     display: flex;
                     justify-content: space-between;
+
+                    .deco-left
+                        {
+                            border-bottom: $size-XS solid map-get($map: $argument, $key: clr-entree-deco );
+                            width: 33%;
+                            position: relative;
+                            bottom: 16px;
+                        }
+                    
+                    .deco-right
+                        {
+                            border-bottom: $size-XS solid map-get($map: $argument, $key: clr-entree-deco );
+                            width: 33%;
+                            position: relative;
+                            bottom: 16px;
+                        }
                 }
             }
+
             &__plat
             {
                 color: map-get($map: $argument, $key: clr-plat);
@@ -37,6 +56,21 @@
                 {
                     display: flex;
                     justify-content: space-between;
+
+                    .deco-left
+                        {
+                            border-bottom: $size-XS solid map-get($map: $argument, $key: clr-plat-deco );
+                            width: 33%;
+                            position: relative;
+                            bottom: 16px;
+                        }
+                    .deco-right
+                        {
+                            border-bottom: $size-XS solid map-get($map: $argument, $key: clr-plat-deco );
+                            width: 33%;
+                            position: relative;
+                            bottom: 16px;
+                        }
                 }
             }
             &__dessert
@@ -47,8 +81,24 @@
                 {
                     display: flex;
                     justify-content: space-between;
+
+                    .deco-left
+                        {
+                            border-bottom: $size-XS solid map-get($map: $argument, $key: clr-dessert-deco );
+                            width: 33%;
+                            position: relative;
+                            bottom: 16px;
+                        }
+                    .deco-right
+                        {
+                            border-bottom: $size-XS solid map-get($map: $argument, $key: clr-dessert-deco );
+                            width: 33%;
+                            position: relative;
+                            bottom: 16px;
+                        }
                 }
             }
         }
     }
 }
+

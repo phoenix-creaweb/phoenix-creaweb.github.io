@@ -5,11 +5,3 @@
 {
     @include format-menu($map-menu);
 }
-
-.deco-left, .deco-right
-{
-    background: $color-menu1-secondary;
-    border: $size-M solid $color-menu1-primary;
-    border-radius: 20px 200px;
-    width: 33%;
-}

@@ -29,6 +29,13 @@ body
 {
 	border-bottom: $color-border $size-XXS solid;
 }
+
+/* Définition des ombrages */
+.shadow
+{
+	box-shadow: $size-XS $size-XS $size-S $color-shadow, -$size-XS $size-0 $size-S $color-shadow;
+}
+
 /* Modification du texte */
 .text-ctrd
 {
