@@ -1,119 +1,133 @@
 // Fondations du site, polices, normalisation du site
 
-body
-{
-	font-family: $ft-ui;
-	margin: $size-0;
-}
+	body
+	{
+		font-family: $ft-ui;
+		margin: $size-0;
+	}
 
 
 /* Largeur de l'appli figée et centrée */
-.container
-{
-	width: $width-site;
-	margin: auto;
-}
+	.container
+	{
+		width: $width-site;
+		margin: auto;
+	}
 
 /* Définition des bordures */
-.border
-{
-	border: $color-shadow $size-XXS solid;
-}
+	.border
+	{
+		border: $color-shadow $size-XXS solid;
+	}
 
-.border-top1
-{
-	border-top: $color-border $size-XXS solid;
-}
+	.border-top1
+	{
+		border-top: $color-border $size-XXS solid;
+	}
 
-.border-bottom1
-{
-	border-bottom: $color-border $size-XXS solid;
-}
+	.border-bottom1
+	{
+		border-bottom: $color-border $size-XXS solid;
+	}
 
 /* Définition des ombrages */
-.shadow
-{
-	box-shadow: $size-XS $size-XS $size-S $color-shadow, -$size-XS $size-0 $size-S $color-shadow;
-}
+	.shadow
+	{
+		box-shadow: $size-XS $size-XS $size-S $color-shadow, -$size-XS $size-0 $size-S $color-shadow;
+	}
 
 /* Modification du texte */
-.text-ctrd
-{
-	text-align: center;
-}
+	.text-ctrd
+	{
+		text-align: center;
+	}
 
-.uppercase
-{
-	text-transform: uppercase;
-}
+	.uppercase
+	{
+		text-transform: uppercase;
+	}
 
 /* Définition des marges externes et internes */
+/* Définition des marges externes */
+	.margin0
+	{
+		margin: $size-0;
+	}
 
-.margin0
-{
-	margin: $size-0;
-}
+	.margin-topbottom0
+	{
+		margin-top: $size-0;
+		margin-bottom: $size-0;
+	}
 
-.margin-topbottom0
-{
-	margin-top: $size-0;
-	margin-bottom: $size-0;
-}
+	.margin-top10
+	{
+		margin-top: $size-M;
+	}
 
-.margin-top10
-{
-	margin-top: $size-M;
-}
+	.margin-bottom10
+	{
+		margin-bottom: $size-M;
+	}
 
-.margin-bottom10
-{
-	margin-bottom: $size-M;
-}
+	.margin20
+	{
+		margin: $size-L;
+	}
 
-.margin20
-{
-	margin: $size-L;
-}
+	.margin40
+	{
+		margin: $size-XL;
+	}
+	.margin-side-M
+	{
+		margin: $size-0 $width-site*0.1;
+	}
+	.margin-side-L
+	{
+		margin: $size-0 $width-site*0.2;
+	}
 
-.padding-middle
-{
-	padding: $size-M $size-0;
-}
+/* Définition des marges internes */
+	.padding-middle
+	{
+		padding: $size-M $size-0;
+	}
 
-.padding-lr10
-{
-	padding: $size-0 $size-M;
-}
+	.padding-lr10
+	{
+		padding: $size-0 $size-M;
+	}
 
-.padding-bottom10
-{
-	padding-bottom: $size-M;
-}
+	.padding-bottom10
+	{
+		padding-bottom: $size-M;
+	}
 
-.padding-bottomL
-{
-	padding-bottom: $size-L;
-}
+	.padding-bottomL
+	{
+		padding-bottom: $size-L;
+	}
 
 /* Les liens */
 
-a
-{
-	text-decoration: none;
-}
+	a
+	{
+		text-decoration: none;
+	}
 
 /* Les couleurs de l'interface */
-.ui-color-main
-{
-	background: $color-primary;
-}
+	.ui-color-main
+	{
+		background: $color-primary;
+	}
 
-.ui-color-txt
-{
-	color: $color-secondary;
-}
+	.ui-color-txt
+	{
+		color: $color-secondary;
+	}
 
-.ui-color-txt-active
-{
-	color: $color-active;
-}
+	.ui-color-txt-active
+	{
+		color: $color-active;
+	}

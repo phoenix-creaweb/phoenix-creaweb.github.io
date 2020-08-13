@@ -29,11 +29,19 @@
                 {
                     display: flex;
                     justify-content: space-between;
+                    p
+                    {
+                        border-bottom: $size-XXS solid map-get($map: $argument, $key: bg);
+                        &:hover
+                        {
+                            border-bottom: $size-XXS solid map-get($map: $argument, $key: clr-entree);
+                        }
+                    }
 
                     .deco-left
                         {
                             border-bottom: $size-XS solid map-get($map: $argument, $key: clr-entree-deco );
-                            width: 33%;
+                            width: $width-deco;
                             position: relative;
                             bottom: 16px;
                         }
@@ -41,7 +49,7 @@
                     .deco-right
                         {
                             border-bottom: $size-XS solid map-get($map: $argument, $key: clr-entree-deco );
-                            width: 33%;
+                            width: $width-deco;
                             position: relative;
                             bottom: 16px;
                         }
@@ -56,18 +64,26 @@
                 {
                     display: flex;
                     justify-content: space-between;
+                    p
+                    {
+                        border-bottom: $size-XXS solid map-get($map: $argument, $key: bg);
+                        &:hover
+                        {
+                            border-bottom: $size-XXS solid map-get($map: $argument, $key: clr-plat);
+                        }
+                    }
 
                     .deco-left
                         {
                             border-bottom: $size-XS solid map-get($map: $argument, $key: clr-plat-deco );
-                            width: 33%;
+                            width: $width-deco;
                             position: relative;
                             bottom: 16px;
                         }
                     .deco-right
                         {
                             border-bottom: $size-XS solid map-get($map: $argument, $key: clr-plat-deco );
-                            width: 33%;
+                            width: $width-deco;
                             position: relative;
                             bottom: 16px;
                         }
@@ -81,18 +97,26 @@
                 {
                     display: flex;
                     justify-content: space-between;
+                    p
+                    {
+                        border-bottom: $size-XXS solid map-get($map: $argument, $key: bg);
+                        &:hover
+                        {
+                            border-bottom: $size-XXS solid map-get($map: $argument, $key: clr-dessert);
+                        }
+                    }
 
                     .deco-left
                         {
                             border-bottom: $size-XS solid map-get($map: $argument, $key: clr-dessert-deco );
-                            width: 33%;
+                            width: $width-deco;
                             position: relative;
                             bottom: 16px;
                         }
                     .deco-right
                         {
                             border-bottom: $size-XS solid map-get($map: $argument, $key: clr-dessert-deco );
-                            width: 33%;
+                            width: $width-deco;
                             position: relative;
                             bottom: 16px;
                         }

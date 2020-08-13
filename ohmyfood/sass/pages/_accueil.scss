@@ -7,11 +7,14 @@
 	justify-content: center;
 	p
 		{
-			transition: 1s;
 			transform: scale(1);
+			opacity: 1;
+
 		&:hover
 			{
+				transition: .5s;
 				transform: scale(1.2);
+				opacity: 0.25;
 			}
 		}
 }

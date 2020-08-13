@@ -1,8 +1,8 @@
-// Définition des blocs de structure
+/* Définition des blocs de structure
 
-// Les BEMs réutilisables sur toutes les pages
+Les BEMs réutilisables sur toutes les pages */
 
-// Le Haut de page
+/* Le Haut de page */
 
 header
 {
@@ -11,8 +11,8 @@ header
 	font-family: $ft-ui;
 }
 
-// Pied de page en position figée en bas de page
-// flex space-between pour positionner les 2 éléments qu'il contient
+/* Pied de page en position figée en bas de page
+flex space-between pour positionner les 2 éléments qu'il contient */
 .footer
 {
 	display: flex;
@@ -22,7 +22,7 @@ header
 	bottom: $size-0;
 }
 
-// Les menus individuels
+/* Les menus individuels */
 
 .menu__ligne
 {

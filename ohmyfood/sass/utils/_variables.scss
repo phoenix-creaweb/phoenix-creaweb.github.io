@@ -5,7 +5,7 @@
     $color-primary: #569C87;
     $color-secondary: #FDCB46;
     $color-active: #FFFFFF;
-
+// bordure basse de l'en-tête et haute du pied de page
     $color-border: #A1C181;
 
 // pour le menu 1
@@ -33,9 +33,11 @@
 // pour les bordures et ombrages
     $color-shadow: grey;
 
-// Définition des dimensions
+// Définition des dimensions clés
 // largeur du site
     $width-site: 480px;
+// largeur des déco de ss-titre dans les menus
+    $width-deco: 30%;
 
 // Définition des polices de caractère
 // pour le site
@@ -53,16 +55,16 @@
 // pour le menu 4:
     $ft4: 'Kaushan Script'; //chez Google Fonts
     $ftx4: 'Segoe Print';
-// Définition des valeurs de marges internes/externes
 
-$size-0: 0;
-$size-XXS: 1px;
-$size-XS: 2px;
-$size-S: 5px;
-$size-M: 10px;
-$size-L: 20px;
-$size-XL: 40px;
-$size-XXL: 80px;
+// Définition des dimensions clés
+    $size-0: 0;
+    $size-XXS: 1px;
+    $size-XS: 2px;
+    $size-S: 5px;
+    $size-M: 10px;
+    $size-L: 20px;
+    $size-XL: 40px;
+    $size-XXL: 80px;
 
 // Définition du mapping de la mise en forme des menus
 // Chaque menu se caractérise par
