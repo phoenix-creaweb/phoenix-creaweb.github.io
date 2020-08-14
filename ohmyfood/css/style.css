@@ -148,6 +148,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   font-family: "Devonshire";
   font-size: 16px;
   background: linear-gradient(90deg, #3D1319, #3D1319);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -158,6 +159,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   font-family: "Croissant One";
   font-size: 16px;
   background: linear-gradient(90deg, #c67412, #6e4ccc);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -170,6 +172,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   font-family: "Dancing Script";
   font-size: 16px;
   background: linear-gradient(90deg, #0228dd, #229df9);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -182,6 +185,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   font-family: "Kaushan Script";
   font-size: 16px;
   background: linear-gradient(90deg, #72bf56, #beff7f);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -228,6 +232,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   font-family: "Devonshire";
   font-size: 30px;
   background: linear-gradient(90deg, #3D1319, #3D1319);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -324,6 +329,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   font-family: "Croissant One";
   font-size: 20px;
   background: linear-gradient(90deg, #c67412, #6e4ccc);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -422,6 +428,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   font-family: "Dancing Script";
   font-size: 30px;
   background: linear-gradient(90deg, #0228dd, #229df9);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -520,6 +527,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   font-family: "Kaushan Script";
   font-size: 30px;
   background: linear-gradient(90deg, #72bf56, #beff7f);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
