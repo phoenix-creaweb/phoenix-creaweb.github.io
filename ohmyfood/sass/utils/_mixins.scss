@@ -18,13 +18,17 @@
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                //color: linear-gradient(map-get($map: $argument, $key: clr-grad-a) map-get($map:$argument, $key: clr-grad-b));
+                &-red
+                {
+                    font-family: map-get($map: $argument, $key: ft);
+                    font-size: map-get($map: $argument, $key: ft-size)*2/3;
+                }
             }
             &__subtitle // génération du selecteur -mx__subtitle
             {
                 color: map-get($map: $argument, $key: clr-subtitle);
                 font-family: map-get($map: $argument, $key: ftx);
-                -webkit-text-fill-color: map-get($map: $argument, $key: clr-subtitle);
+                //-webkit-text-fill-color: map-get($map: $argument, $key: clr-subtitle);
             }
             &__entree // génération du selecteur -mx__entree
             {
@@ -35,13 +39,16 @@
                 {
                     display: flex;
                     justify-content: space-between;
-                    p
+                    h3
                     {
+                        //background-color: map-get($map: $argument, $key: bg);
                         border-bottom: $size-XXS solid map-get($map: $argument, $key: bg);
+                        font-style: italic;
                         &:hover
                         {
                             transition:1s;
                             border-bottom: $size-XXS solid map-get($map: $argument, $key: clr-entree);
+                            //background: map-get($map: $argument, $key: clr-entree);
                         }
                     }
 
@@ -73,9 +80,10 @@
                 {
                     display: flex;
                     justify-content: space-between;
-                    p
+                    h3
                     {
                         border-bottom: $size-XXS solid map-get($map: $argument, $key: bg);
+                        font-style: italic;
                         &:hover
                         {
                             transition:1s;
@@ -110,9 +118,10 @@
                 {
                     display: flex;
                     justify-content: space-between;
-                    p
+                    h3
                     {
                         border-bottom: $size-XXS solid map-get($map: $argument, $key: bg);
+                        font-style: italic;
                         &:hover
                         {
                             transition:1s;

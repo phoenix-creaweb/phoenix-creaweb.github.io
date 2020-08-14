@@ -15,11 +15,6 @@
 	}
 
 /* Définition des bordures */
-	.border
-	{
-		border: $color-shadow $size-XXS solid;
-	}
-
 	.border-top1
 	{
 		border-top: $color-border $size-XXS solid;
@@ -65,6 +60,11 @@
 		margin-bottom: $size-0;
 	}
 
+	.margin-bottom80
+	{
+		margin-bottom: $size-XXL;
+	}
+
 	.margin-top10
 	{
 		margin-top: $size-M;
@@ -86,7 +86,8 @@
 	}
 	.margin-side-M
 	{
-		margin: $size-0 $width-site*0.1;
+		margin-left: $width-site*0.1;
+		margin-right: $width-site*0.1;
 	}
 	.margin-side-L
 	{
@@ -102,6 +103,11 @@
 	.padding-lr10
 	{
 		padding: $size-0 $size-M;
+	}
+
+	.padding-lr40
+	{
+		padding: $size-0 $size-XL;
 	}
 
 	.padding-bottom10

@@ -11,6 +11,15 @@
     height: $size-XL;
     &-reduced
     {
-        height: $size-L;
+        height: $size-L + $size-S;
     }
 }
+
+.plat, .prix
+{
+    p
+    {
+        margin: $size-S $size-0;
+    }
+}
+
