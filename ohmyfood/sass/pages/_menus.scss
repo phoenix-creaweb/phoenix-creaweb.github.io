@@ -5,3 +5,12 @@
 {
     @include format-menu($map-menu);
 }
+
+.logo-m1
+{
+    height: $size-XL;
+    &-reduced
+    {
+        height: $size-L;
+    }
+}

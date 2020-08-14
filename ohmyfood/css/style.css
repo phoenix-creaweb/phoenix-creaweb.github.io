@@ -48,6 +48,10 @@ body {
   margin-bottom: 0;
 }
 
+.margin-bottom0 {
+  margin-bottom: 0;
+}
+
 .margin-top10 {
   margin-top: 10px;
 }
@@ -255,16 +259,18 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #3D1319;
 }
 .menu-m1__entree-titre .deco-left {
-  border-bottom: 2px solid #3D1319;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m1-deco-L-a.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
 }
 .menu-m1__entree-titre .deco-right {
-  border-bottom: 2px solid #3D1319;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m1-deco-R-a.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
 }
 .menu-m1__plat {
   color: #3D1319;
@@ -282,16 +288,18 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #3D1319;
 }
 .menu-m1__plat-titre .deco-left {
-  border-bottom: 2px solid #3D1319;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m1-deco-L-a.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
 }
 .menu-m1__plat-titre .deco-right {
-  border-bottom: 2px solid #3D1319;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m1-deco-R-a.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
 }
 .menu-m1__dessert {
   color: #3D1319;
@@ -309,16 +317,18 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #3D1319;
 }
 .menu-m1__dessert-titre .deco-left {
-  border-bottom: 2px solid #3D1319;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m1-deco-L-a.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
 }
 .menu-m1__dessert-titre .deco-right {
-  border-bottom: 2px solid #3D1319;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m1-deco-R-a.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
 }
 .menu-m2 {
   background-color: #FFF5FE;
@@ -354,16 +364,18 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #c67412;
 }
 .menu-m2__entree-titre .deco-left {
-  border-bottom: 2px solid #c67412;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m2-deco-L-a.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
 }
 .menu-m2__entree-titre .deco-right {
-  border-bottom: 2px solid #c67412;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m2-deco-R-a.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
 }
 .menu-m2__plat {
   color: #a56799;
@@ -381,16 +393,18 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #a56799;
 }
 .menu-m2__plat-titre .deco-left {
-  border-bottom: 2px solid #a56799;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m2-deco-L-b.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
 }
 .menu-m2__plat-titre .deco-right {
-  border-bottom: 2px solid #a56799;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m2-deco-R-b.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
 }
 .menu-m2__dessert {
   color: #6e4ccc;
@@ -408,16 +422,18 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #6e4ccc;
 }
 .menu-m2__dessert-titre .deco-left {
-  border-bottom: 2px solid #6e4ccc;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m2-deco-L-c.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
 }
 .menu-m2__dessert-titre .deco-right {
-  border-bottom: 2px solid #6e4ccc;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m2-deco-R-c.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
 }
 .menu-m3 {
   background-color: #F9F9F9;
@@ -453,16 +469,18 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #000000;
 }
 .menu-m3__entree-titre .deco-left {
-  border-bottom: 2px solid #0228dd;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m3-deco-L-a.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
 }
 .menu-m3__entree-titre .deco-right {
-  border-bottom: 2px solid #0228dd;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m3-deco-R-a.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
 }
 .menu-m3__plat {
   color: #000000;
@@ -480,16 +498,18 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #000000;
 }
 .menu-m3__plat-titre .deco-left {
-  border-bottom: 2px solid #0670f3;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m3-deco-L-b.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
 }
 .menu-m3__plat-titre .deco-right {
-  border-bottom: 2px solid #0670f3;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m3-deco-R-b.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
 }
 .menu-m3__dessert {
   color: #000000;
@@ -507,16 +527,18 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #000000;
 }
 .menu-m3__dessert-titre .deco-left {
-  border-bottom: 2px solid #229df9;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m3-deco-L-c.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
 }
 .menu-m3__dessert-titre .deco-right {
-  border-bottom: 2px solid #229df9;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m3-deco-R-c.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
 }
 .menu-m4 {
   background-color: #FDFFFD;
@@ -552,16 +574,18 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #000000;
 }
 .menu-m4__entree-titre .deco-left {
-  border-bottom: 2px solid #72bf56;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m4-deco-L-a.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
 }
 .menu-m4__entree-titre .deco-right {
-  border-bottom: 2px solid #72bf56;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m4-deco-R-a.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
 }
 .menu-m4__plat {
   color: #000000;
@@ -579,16 +603,18 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #000000;
 }
 .menu-m4__plat-titre .deco-left {
-  border-bottom: 2px solid #72bf56;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m4-deco-L-a.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
 }
 .menu-m4__plat-titre .deco-right {
-  border-bottom: 2px solid #72bf56;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m4-deco-R-a.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
 }
 .menu-m4__dessert {
   color: #000000;
@@ -606,16 +632,25 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   border-bottom: 1px solid #000000;
 }
 .menu-m4__dessert-titre .deco-left {
-  border-bottom: 2px solid #72bf56;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m4-deco-L-a.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
 }
 .menu-m4__dessert-titre .deco-right {
-  border-bottom: 2px solid #72bf56;
   width: 30%;
-  position: relative;
-  bottom: 16px;
+  background-image: url("../pic/m4-deco-R-a.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
+}
+
+.logo-m1 {
+  height: 40px;
+}
+.logo-m1-reduced {
+  height: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -47,18 +47,20 @@
 
                     .deco-left
                         {
-                            border-bottom: $size-XS solid map-get($map: $argument, $key: clr-entree-deco );
                             width: $width-deco;
-                            position: relative;
-                            bottom: 16px;
+                            background-image: url(map-get($map: $argument, $key: deco-L-a));
+                            background-repeat: no-repeat;
+                            background-size: 100%;
+                            background-position-y: center;
                         }
                     
                     .deco-right
                         {
-                            border-bottom: $size-XS solid map-get($map: $argument, $key: clr-entree-deco );
                             width: $width-deco;
-                            position: relative;
-                            bottom: 16px;
+                            background-image: url(map-get($map: $argument, $key: deco-R-a));
+                            background-repeat: no-repeat;
+                            background-size: 100%;
+                            background-position-y: center;
                         }
                 }
             }
@@ -83,17 +85,20 @@
 
                     .deco-left
                         {
-                            border-bottom: $size-XS solid map-get($map: $argument, $key: clr-plat-deco );
                             width: $width-deco;
-                            position: relative;
-                            bottom: 16px;
+                            background-image: url(map-get($map: $argument, $key: deco-L-b));
+                            background-repeat: no-repeat;
+                            background-size: 100%;
+                            background-position-y: center;
                         }
+                    
                     .deco-right
                         {
-                            border-bottom: $size-XS solid map-get($map: $argument, $key: clr-plat-deco );
                             width: $width-deco;
-                            position: relative;
-                            bottom: 16px;
+                            background-image: url(map-get($map: $argument, $key: deco-R-b));
+                            background-repeat: no-repeat;
+                            background-size: 100%;
+                            background-position-y: center;
                         }
                 }
             }
@@ -117,17 +122,20 @@
 
                     .deco-left
                         {
-                            border-bottom: $size-XS solid map-get($map: $argument, $key: clr-dessert-deco );
                             width: $width-deco;
-                            position: relative;
-                            bottom: 16px;
+                            background-image: url(map-get($map: $argument, $key: deco-L-c));
+                            background-repeat: no-repeat;
+                            background-size: 100%;
+                            background-position-y: center;
                         }
+                    
                     .deco-right
                         {
-                            border-bottom: $size-XS solid map-get($map: $argument, $key: clr-dessert-deco );
                             width: $width-deco;
-                            position: relative;
-                            bottom: 16px;
+                            background-image: url(map-get($map: $argument, $key: deco-R-c));
+                            background-repeat: no-repeat;
+                            background-size: 100%;
+                            background-position-y: center;
                         }
                 }
             }
@@ -158,4 +166,5 @@
             }
         }
     }
-}  
+}
+

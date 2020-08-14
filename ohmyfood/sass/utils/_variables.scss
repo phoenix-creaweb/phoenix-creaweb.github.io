@@ -76,6 +76,31 @@
     $size-XL: 40px;
     $size-XXL: 80px;
 
+// url des images de décoration des menus
+    // menu 1
+    $url-m1-deco-L: "../pic/m1-deco-L-a.png";
+    $url-m1-deco-R: "../pic/m1-deco-R-a.png";
+
+    // menu 2
+    $url-m2-deco-L-a: "../pic/m2-deco-L-a.png";
+    $url-m2-deco-R-a: "../pic/m2-deco-R-a.png";
+    $url-m2-deco-L-b: "../pic/m2-deco-L-b.png";
+    $url-m2-deco-R-b: "../pic/m2-deco-R-b.png";
+    $url-m2-deco-L-c: "../pic/m2-deco-L-c.png";
+    $url-m2-deco-R-c: "../pic/m2-deco-R-c.png";
+
+    // menu 3
+    $url-m3-deco-L-a: "../pic/m3-deco-L-a.png";
+    $url-m3-deco-R-a: "../pic/m3-deco-R-a.png";
+    $url-m3-deco-L-b: "../pic/m3-deco-L-b.png";
+    $url-m3-deco-R-b: "../pic/m3-deco-R-b.png";
+    $url-m3-deco-L-c: "../pic/m3-deco-L-c.png";
+    $url-m3-deco-R-c: "../pic/m3-deco-R-c.png";
+
+    // menu 4
+    $url-m4-deco-L: "../pic/m4-deco-L-a.png";
+    $url-m4-deco-R: "../pic/m4-deco-R-a.png";
+
 // Définition du mapping de la mise en forme des menus
 // Chaque menu se caractérise par
 // - bg:            une couleur de fond
@@ -104,6 +129,12 @@ $map-menu:(
         ft-size: $size-M + $size-L,
         ftx: $ftx1,
         ftx-size: $size-M,
+        deco-L-a: $url-m1-deco-L,
+        deco-R-a: $url-m1-deco-R,
+        deco-L-b: $url-m1-deco-L,
+        deco-R-b: $url-m1-deco-R,
+        deco-L-c: $url-m1-deco-L,
+        deco-R-c: $url-m1-deco-R,
     ),
     m2:(
         bg: $color-menu2-primary,
@@ -120,7 +151,13 @@ $map-menu:(
         ft: $ft2,
         ft-size: $size-L,
         ftx: $ftx2,
-        ftx-size: $size-M
+        ftx-size: $size-M,
+        deco-L-a: $url-m2-deco-L-a,
+        deco-R-a: $url-m2-deco-R-a,
+        deco-L-b: $url-m2-deco-L-b,
+        deco-R-b: $url-m2-deco-R-b,
+        deco-L-c: $url-m2-deco-L-c,
+        deco-R-c: $url-m2-deco-R-c,
     ),
     m3:(
         bg: $color-menu3-primary,
@@ -137,7 +174,13 @@ $map-menu:(
         ft: $ft3,
         ft-size: $size-M + $size-L,
         ftx: $ftx3,
-        ftx-size: $size-M
+        ftx-size: $size-M,
+        deco-L-a: $url-m3-deco-L-a,
+        deco-R-a: $url-m3-deco-R-a,
+        deco-L-b: $url-m3-deco-L-b,
+        deco-R-b: $url-m3-deco-R-b,
+        deco-L-c: $url-m3-deco-L-c,
+        deco-R-c: $url-m3-deco-R-c,
     ),
     m4:(
         bg: $color-menu4-primary,
@@ -154,6 +197,13 @@ $map-menu:(
         ft: $ft4,
         ft-size: $size-M + $size-L,
         ftx: $ftx4,
-        ftx-size: $size-M
+        ftx-size: $size-M,
+        deco-L-a: $url-m4-deco-L,
+        deco-R-a: $url-m4-deco-R,
+        deco-L-b: $url-m4-deco-L,
+        deco-R-b: $url-m4-deco-R,
+        deco-L-c: $url-m4-deco-L,
+        deco-R-c: $url-m4-deco-R,
     )
-)
+);
+
