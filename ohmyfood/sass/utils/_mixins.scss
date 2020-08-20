@@ -1,16 +1,17 @@
 // génération du code pour formatter les menus (couleurs de fond, polices, ...)
+// les mixins ci-dessous font appel aux variables et maps déclarées dans _variables.scss
 
 @mixin format-menu ($menu)
  {
     @each $menu, $argument in $map-menu
     {
-        &-#{$menu} // génération du selecteur -mx
+        &-#{$menu} // mise en page générale des menus
         {
             background-color: map-get($map: $argument, $key: bg);
             color: map-get($map: $argument, $key: clr-base);
             font-family: map-get($map: $argument, $key: ftx);
             
-            &__title // génération du selecteur -mx__title
+            &__title // mise en forme du nom des restaurant avec gradient de couleurs
             {
                 font-family: map-get($map: $argument, $key: ft);
                 font-size: map-get($map: $argument, $key: ft-size);
@@ -24,13 +25,13 @@
                     font-size: map-get($map: $argument, $key: ft-size)*2/3;
                 }
             }
-            &__subtitle // génération du selecteur -mx__subtitle
+            &__subtitle // concerne "MENU" en ss-titre de chaque nom de restaurant
             {
                 color: map-get($map: $argument, $key: clr-subtitle);
                 font-family: map-get($map: $argument, $key: ftx);
-                //-webkit-text-fill-color: map-get($map: $argument, $key: clr-subtitle);
             }
-            &__entree // génération du selecteur -mx__entree
+            // mise en page pour les menus indiciduels
+            &__entree // mise en forme du div des entrées
             {
                 color: map-get($map: $argument, $key: clr-entree);
                 font-size: map-get($map: $argument, $key: ftx-size);
@@ -42,10 +43,12 @@
 
                     &-text // génération du selecteur -mx__entree-titre-text
                     {
+                        // sous-couche préparée pour l'effet souligné de G à D qd survol
                         position: relative;
                         z-index: 1;
                         cursor: pointer;
                         
+                        // surcouche pour l'effet souligné de G à D qd survol
                         &::after
                         {
                             content: "";
@@ -53,7 +56,7 @@
                             transform-origin: left;
                             position: absolute;
                             left: 0;
-                            height: 2px;
+                            height: .1rem;
                             width: 100%;
                             background: map-get($map: $argument, $key: clr-entree);
                             transform: scaleX(0);
@@ -75,7 +78,7 @@
                         margin: 0 auto;
                     }
                 
-
+                    // décorations des sections entrees plats desserts
                     .deco-left
                     {
                         width: $width-deco;
@@ -95,7 +98,7 @@
                     }
                 }
             }
-
+            // idem entrées
             &__plat
             {
                 color: map-get($map: $argument, $key: clr-plat);
@@ -117,7 +120,7 @@
                             transform-origin: left;
                             position: absolute;
                             left: 0;
-                            height: 2px;
+                            height: .1rem;
                             width: 100%;
                             background: map-get($map: $argument, $key: clr-plat);
                             transform: scaleX(0);
@@ -158,6 +161,8 @@
                         }
                 }
             }
+
+            // idem entrées
             &__dessert
             {
                 color: map-get($map: $argument, $key: clr-dessert);
@@ -179,7 +184,7 @@
                             transform-origin: left;
                             position: absolute;
                             left: 0;
-                            height: 2px;
+                            height: .1rem;
                             width: 100%;
                             background: map-get($map: $argument, $key: clr-dessert);
                             transform: scaleX(0);
@@ -223,6 +228,8 @@
         }
     }
 }
+
+// génération des btn de la page d'accueil
 
 @mixin format-btn-accueil ($menu)
  {

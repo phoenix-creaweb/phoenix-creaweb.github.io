@@ -1,10 +1,11 @@
-// définition des variables ohmyfood
+// Définition des variables et mapping ohmyfood
 
-// définition des couleurs
-//Interface
+// Définition des couleurs
+// Interface
     $color-primary: #569C87;
     $color-secondary: #FDCB46;
     $color-active: #FFFFFF;
+
 // bordure basse de l'en-tête et haute du pied de page
     $color-border: #A1C181;
 
@@ -103,15 +104,18 @@
 
 // Définition du mapping de la mise en forme des menus
 // Chaque menu se caractérise par
-// - bg:            une couleur de fond
-// - clr-base:      une couleur de texte par défaut
-// - clr-entree:    une couleur de texte pour les entrées
-// - clr-plat:      une couleur de texte pour les plats principaux
-// - clr-dessert:   une couleur de texte pour les desserts
-// - ft:            une police de caractères pour le titre
-// - ft-size:       une taille de police de caractères pour le titre
-// - ftx:           une police de caractère pour le texte
-// - ftx-size:      une taille de police de caractères pour le titre
+// - bg:                une couleur de fond
+// - clr-base:          une couleur de texte par défaut
+// - clr-entree:        une couleur de texte pour les entrées
+// - clr-plat:          une couleur de texte pour les plats principaux
+// - clr-dessert:       une couleur de texte pour les desserts
+// - clr-xxx-deco:      une couleur pour la déco de chaque catégorie (xxx = entrée, plat ou dessert)
+// - clr-grad-a/b:      2 couleurs pour générer les gradients des titres
+// - ft:                une police de caractères pour le titre
+// - ft-size:           une taille de police de caractères pour le titre
+// - ftx:               une police de caractère pour le texte
+// - ftx-size:          une taille de police de caractères pour le titre
+// - deco-L/R-a/b/c:    jusqu'à 6 url pour les éléments de décoration dans les menus
 
 $map-menu:(
     m1:(
@@ -207,3 +211,12 @@ $map-menu:(
     )
 );
 
+// Variables dédiées aux animations
+
+// pour wiggle
+$wiggle-size: 4px;
+$wiggle-dur: 100ms;
+
+// pour jumping
+$jump-dur: 800ms;
+$jump-size: 0.2rem;

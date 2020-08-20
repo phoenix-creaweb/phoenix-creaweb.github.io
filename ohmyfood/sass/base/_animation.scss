@@ -1,44 +1,50 @@
-@keyframes shake
+@keyframes wiggle
 {
-    20%
+    
+    50%
     {
-        transform: translateX(-1px);
+        transform: translateX($wiggle-size);
     }
-    40%
+    75%
     {
-        transform: translateX(4px);
+        transform: translateX(-$wiggle-size);
     }
-    60%
-    {
-        transform: translateX(-4px);
-    }
-    80%
-    {
-        transform: translateX(1px);
-    }
-    100%
-    {
-        transform: translateX(0);
-    }
+    
 }
 
 .wiggle:hover
 {
-    animation: shake 500ms ease-in-out both;
+    animation: wiggle $wiggle-dur ease-in-out both 2;
 }
 
-@keyframe jumping
+@keyframes jumping
 {
-    0%, 50%, 100%
+    0%, 50%
     {
         transform: translateY(0);
     }
+
     25%
     {
-        transform: translateY(1rem);
+        transform: scale(2) translateY(-$jump-size);
     }
     75%
     {
-        transform: translateY(-1rem);
+        transform: translateY($jump-size);
     }
+}
+
+.anim-pt1
+{
+    animation: jumping $jump-dur ease-in-out both infinite;
+}
+
+.anim-pt2
+{
+    animation: jumping $jump-dur ease-in-out $jump-dur/3  infinite;
+}
+
+.anim-pt3
+{
+    animation: jumping $jump-dur ease-in-out 2*$jump-dur/3  infinite;
 }

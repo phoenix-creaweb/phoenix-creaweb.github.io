@@ -14,6 +14,18 @@
 		margin: auto;
 	}
 
+/* Largeur du contenu des menus */
+	.bloc
+	{
+		padding: 0 2rem;
+		margin: 1rem 0;
+	}
+
+	.prix
+	{
+		margin-left: 1rem;
+	}
+
 /* Définition des bordures */
 	.border-top1
 	{
@@ -118,6 +130,11 @@
 	.padding-bottomL
 	{
 		padding-bottom: $size-L;
+	}
+
+	.padding-menu
+	{
+		padding: $size-M $size-M $size-M $size-M;
 	}
 
 /* Les liens */

@@ -10,6 +10,16 @@ body {
   margin: auto;
 }
 
+/* Largeur du contenu des menus */
+.bloc {
+  padding: 0 2rem;
+  margin: 1rem 0;
+}
+
+.prix {
+  margin-left: 1rem;
+}
+
 /* Définition des bordures */
 .border-top1 {
   border-top: #A1C181 1px solid;
@@ -98,6 +108,10 @@ body {
   padding-bottom: 20px;
 }
 
+.padding-menu {
+  padding: 10px 10px 10px 10px;
+}
+
 /* Les liens */
 a {
   text-decoration: none;
@@ -116,25 +130,39 @@ a {
   color: #FFFFFF;
 }
 
-@keyframes shake {
-  20% {
-    transform: translateX(-1px);
-  }
-  40% {
+@keyframes wiggle {
+  50% {
     transform: translateX(4px);
   }
-  60% {
+  75% {
     transform: translateX(-4px);
-  }
-  80% {
-    transform: translateX(1px);
-  }
-  100% {
-    transform: translateX(0);
   }
 }
 .wiggle:hover {
-  animation: shake 500ms ease-in-out both;
+  animation: wiggle 100ms ease-in-out both 2;
+}
+
+@keyframes jumping {
+  0%, 50% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: scale(2) translateY(-0.2rem);
+  }
+  75% {
+    transform: translateY(0.2rem);
+  }
+}
+.anim-pt1 {
+  animation: jumping 800ms ease-in-out both infinite;
+}
+
+.anim-pt2 {
+  animation: jumping 800ms ease-in-out 266.6666666667ms infinite;
+}
+
+.anim-pt3 {
+  animation: jumping 800ms ease-in-out 533.3333333333ms infinite;
 }
 
 /* Définition des blocs de structure
@@ -235,8 +263,12 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   display: flex;
   justify-content: center;
 }
+.btn-next__content-txt {
+  margin: 0 2px;
+}
 .btn-next__content-pt {
   transform: translateY(0);
+  margin: 0 2px;
 }
 
 /* Affichage des 4 menus sur la page d'accueil */
@@ -295,7 +327,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   transform-origin: left;
   position: absolute;
   left: 0;
-  height: 2px;
+  height: 0.1rem;
   width: 100%;
   background: #3D1319;
   transform: scaleX(0);
@@ -341,7 +373,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   transform-origin: left;
   position: absolute;
   left: 0;
-  height: 2px;
+  height: 0.1rem;
   width: 100%;
   background: #3D1319;
   transform: scaleX(0);
@@ -387,7 +419,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   transform-origin: left;
   position: absolute;
   left: 0;
-  height: 2px;
+  height: 0.1rem;
   width: 100%;
   background: #3D1319;
   transform: scaleX(0);
@@ -454,7 +486,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   transform-origin: left;
   position: absolute;
   left: 0;
-  height: 2px;
+  height: 0.1rem;
   width: 100%;
   background: #c67412;
   transform: scaleX(0);
@@ -500,7 +532,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   transform-origin: left;
   position: absolute;
   left: 0;
-  height: 2px;
+  height: 0.1rem;
   width: 100%;
   background: #a56799;
   transform: scaleX(0);
@@ -546,7 +578,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   transform-origin: left;
   position: absolute;
   left: 0;
-  height: 2px;
+  height: 0.1rem;
   width: 100%;
   background: #6e4ccc;
   transform: scaleX(0);
@@ -613,7 +645,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   transform-origin: left;
   position: absolute;
   left: 0;
-  height: 2px;
+  height: 0.1rem;
   width: 100%;
   background: #000000;
   transform: scaleX(0);
@@ -659,7 +691,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   transform-origin: left;
   position: absolute;
   left: 0;
-  height: 2px;
+  height: 0.1rem;
   width: 100%;
   background: #000000;
   transform: scaleX(0);
@@ -705,7 +737,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   transform-origin: left;
   position: absolute;
   left: 0;
-  height: 2px;
+  height: 0.1rem;
   width: 100%;
   background: #000000;
   transform: scaleX(0);
@@ -772,7 +804,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   transform-origin: left;
   position: absolute;
   left: 0;
-  height: 2px;
+  height: 0.1rem;
   width: 100%;
   background: #000000;
   transform: scaleX(0);
@@ -818,7 +850,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   transform-origin: left;
   position: absolute;
   left: 0;
-  height: 2px;
+  height: 0.1rem;
   width: 100%;
   background: #000000;
   transform: scaleX(0);
@@ -864,7 +896,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   transform-origin: left;
   position: absolute;
   left: 0;
-  height: 2px;
+  height: 0.1rem;
   width: 100%;
   background: #000000;
   transform: scaleX(0);
