@@ -116,6 +116,27 @@ a {
   color: #FFFFFF;
 }
 
+@keyframes shake {
+  20% {
+    transform: translateX(-1px);
+  }
+  40% {
+    transform: translateX(4px);
+  }
+  60% {
+    transform: translateX(-4px);
+  }
+  80% {
+    transform: translateX(1px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.wiggle:hover {
+  animation: shake 500ms ease-in-out both;
+}
+
 /* Définition des blocs de structure
 
 Les BEMs réutilisables sur toutes les pages */
