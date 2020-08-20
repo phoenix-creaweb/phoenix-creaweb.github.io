@@ -26,3 +26,19 @@
 {
     animation: shake 500ms ease-in-out both;
 }
+
+@keyframe jumping
+{
+    0%, 50%, 100%
+    {
+        transform: translateY(0);
+    }
+    25%
+    {
+        transform: translateY(1rem);
+    }
+    75%
+    {
+        transform: translateY(-1rem);
+    }
+}

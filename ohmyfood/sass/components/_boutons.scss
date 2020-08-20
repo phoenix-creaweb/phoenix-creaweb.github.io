@@ -18,15 +18,23 @@
 	&-next
 	{
 		width: $width-site/2;
-		height: 30px;
-		border-radius: $size-M;
-		text-align: center;
+		height: 2rem;
+		border-radius: 2rem;
 		margin: auto;
-		margin-bottom: $size-M;
-		p
+		padding-top: 1rem;
+
+		&__content
+		{
+			display: flex;
+			justify-content: center;
+
+			&-pt
 			{
-				padding-top: $size-S;
+				transform: translateY(0);
 			}
+		}
+		
+		
 	}
 }
 

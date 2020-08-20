@@ -39,36 +39,60 @@
                 {
                     display: flex;
                     justify-content: space-between;
-                    h3
+
+                    &-text // génération du selecteur -mx__entree-titre-text
                     {
-                        //background-color: map-get($map: $argument, $key: bg);
-                        border-bottom: $size-XXS solid map-get($map: $argument, $key: bg);
-                        font-style: italic;
+                        position: relative;
+                        z-index: 1;
+                        cursor: pointer;
+                        
+                        &::after
+                        {
+                            content: "";
+                            z-index: 2;
+                            transform-origin: left;
+                            position: absolute;
+                            left: 0;
+                            height: 2px;
+                            width: 100%;
+                            background: map-get($map: $argument, $key: clr-entree);
+                            transform: scaleX(0);
+                            transition: transform 500ms;
+                        }
+
                         &:hover
                         {
-                            transition:1s;
-                            border-bottom: $size-XXS solid map-get($map: $argument, $key: clr-entree);
-                            //background: map-get($map: $argument, $key: clr-entree);
+                            &::after
+                            {
+                                transform: scaleX(1);
+                            }
                         }
                     }
 
+                    h3
+                    {
+                        font-style: italic;
+                        margin: 0 auto;
+                    }
+                
+
                     .deco-left
-                        {
-                            width: $width-deco;
-                            background-image: url(map-get($map: $argument, $key: deco-L-a));
-                            background-repeat: no-repeat;
-                            background-size: 100%;
-                            background-position-y: center;
-                        }
+                    {
+                        width: $width-deco;
+                        background-image: url(map-get($map: $argument, $key: deco-L-a));
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        background-position-y: center;
+                    }
                     
                     .deco-right
-                        {
-                            width: $width-deco;
-                            background-image: url(map-get($map: $argument, $key: deco-R-a));
-                            background-repeat: no-repeat;
-                            background-size: 100%;
-                            background-position-y: center;
-                        }
+                    {
+                        width: $width-deco;
+                        background-image: url(map-get($map: $argument, $key: deco-R-a));
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        background-position-y: center;
+                    }
                 }
             }
 
@@ -80,15 +104,39 @@
                 {
                     display: flex;
                     justify-content: space-between;
-                    h3
+                    &-text // génération du selecteur -mx__entree-titre-text
                     {
-                        border-bottom: $size-XXS solid map-get($map: $argument, $key: bg);
-                        font-style: italic;
+                        position: relative;
+                        z-index: 1;
+                        cursor: pointer;
+                        
+                        &::after
+                        {
+                            content: "";
+                            z-index: 2;
+                            transform-origin: left;
+                            position: absolute;
+                            left: 0;
+                            height: 2px;
+                            width: 100%;
+                            background: map-get($map: $argument, $key: clr-plat);
+                            transform: scaleX(0);
+                            transition: transform 500ms;
+                        }
+
                         &:hover
                         {
-                            transition:1s;
-                            border-bottom: $size-XXS solid map-get($map: $argument, $key: clr-plat);
+                            &::after
+                            {
+                                transform: scaleX(1);
+                            }
                         }
+                    }
+
+                    h3
+                    {
+                        font-style: italic;
+                        margin: 0 auto;
                     }
 
                     .deco-left
@@ -118,15 +166,39 @@
                 {
                     display: flex;
                     justify-content: space-between;
-                    h3
+                    &-text // génération du selecteur -mx__entree-titre-text
                     {
-                        border-bottom: $size-XXS solid map-get($map: $argument, $key: bg);
-                        font-style: italic;
+                        position: relative;
+                        z-index: 1;
+                        cursor: pointer;
+                        
+                        &::after
+                        {
+                            content: "";
+                            z-index: 2;
+                            transform-origin: left;
+                            position: absolute;
+                            left: 0;
+                            height: 2px;
+                            width: 100%;
+                            background: map-get($map: $argument, $key: clr-dessert);
+                            transform: scaleX(0);
+                            transition: transform 500ms;
+                        }
+
                         &:hover
                         {
-                            transition:1s;
-                            border-bottom: $size-XXS solid map-get($map: $argument, $key: clr-dessert);
+                            &::after
+                            {
+                                transform: scaleX(1);
+                            }
                         }
+                    }
+
+                    h3
+                    {
+                        font-style: italic;
+                        margin: 0 auto;
                     }
 
                     .deco-left
