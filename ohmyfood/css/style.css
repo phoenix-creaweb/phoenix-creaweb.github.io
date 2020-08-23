@@ -287,6 +287,14 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   opacity: 0.25;
 }
 
+.mention__content {
+  padding: 0 10px;
+}
+
+.mention__content > p {
+  padding: 0 10px;
+}
+
 /* Définition du format des menus */
 .menu-m1 {
   background-color: #FCDFDB;
