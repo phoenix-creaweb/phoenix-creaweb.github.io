@@ -11,7 +11,7 @@
             color: map-get($map: $argument, $key: clr-base);
             font-family: map-get($map: $argument, $key: ftx);
             
-            &__title // mise en forme du nom des restaurant avec gradient de couleurs
+            &__title // mise en forme du nom des restaurants avec gradient de couleurs
             {
                 font-family: map-get($map: $argument, $key: ft);
                 font-size: map-get($map: $argument, $key: ft-size);
@@ -30,7 +30,7 @@
                 color: map-get($map: $argument, $key: clr-subtitle);
                 font-family: map-get($map: $argument, $key: ftx);
             }
-            // mise en page pour les menus indiciduels
+            // mise en page pour les menus individuels
             &__entree // mise en forme du div des entrées
             {
                 color: map-get($map: $argument, $key: clr-entree);

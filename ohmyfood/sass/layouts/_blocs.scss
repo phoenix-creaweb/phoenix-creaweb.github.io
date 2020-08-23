@@ -11,6 +11,8 @@ header
 	font-family: $ft-ui;
 }
 
+
+
 /* Pied de page en position figée en bas de page
 flex space-between pour positionner les 2 éléments qu'il contient */
 .footer
@@ -20,6 +22,10 @@ flex space-between pour positionner les 2 éléments qu'il contient */
 	width: $width-site;
 	position: fixed;
 	bottom: $size-0;
+	@media all and (max-width:480px)
+		{
+			width: $width-site-responsive;
+		}
 }
 
 /* Les menus individuels */
@@ -28,4 +34,8 @@ flex space-between pour positionner les 2 éléments qu'il contient */
 {
 	display: flex;
 	justify-content: space-between;
+	@media all and (max-width:480px)
+	{
+		flex-direction: column;
+	}
 }

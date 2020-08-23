@@ -12,6 +12,10 @@
 	{
 		width: $width-site;
 		margin: auto;
+		@media all and (max-width:480px)
+		{
+			width: $width-site-responsive;
+		}
 	}
 
 /* Largeur du contenu des menus */
@@ -19,6 +23,10 @@
 	{
 		padding: 0 2rem;
 		margin: 1rem 0;
+		@media all and (max-width:480px)
+		{
+			padding: 0 0.2rem;
+		}
 	}
 
 	.prix
@@ -100,6 +108,11 @@
 	{
 		margin-left: $width-site*0.1;
 		margin-right: $width-site*0.1;
+		@media all and (max-width:480px)
+		{
+			margin-left: $width-site-responsive*0.1;
+			margin-right: $width-site-responsive*0.1;
+		}
 	}
 	.margin-side-L
 	{

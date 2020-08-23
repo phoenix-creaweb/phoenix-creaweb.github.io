@@ -4,6 +4,14 @@
 .menu
 {
     @include format-menu($map-menu);
+    @media all and (max-width:480px)
+		{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            width: fit-content;
+            margin: auto;
+        }
 }
 
 .logo-m1
@@ -23,3 +31,28 @@
     }
 }
 
+.plat
+{
+    @media all and (max-width:480px)
+    {
+        p
+            {
+                margin-bottom: 0;
+            }
+    }
+    
+}
+
+.prix
+{
+    @media all and (max-width:480px)
+    {
+        text-align: end;
+        p
+        {
+            margin-top: 0;
+        }
+        
+    }
+    
+}

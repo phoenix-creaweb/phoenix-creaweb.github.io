@@ -9,11 +9,21 @@ body {
   width: 480px;
   margin: auto;
 }
+@media all and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+}
 
 /* Largeur du contenu des menus */
 .bloc {
   padding: 0 2rem;
   margin: 1rem 0;
+}
+@media all and (max-width: 480px) {
+  .bloc {
+    padding: 0 0.2rem;
+  }
 }
 
 .prix {
@@ -81,6 +91,12 @@ body {
 .margin-side-M {
   margin-left: 48px;
   margin-right: 48px;
+}
+@media all and (max-width: 480px) {
+  .margin-side-M {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 
 .margin-side-L {
@@ -184,11 +200,21 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   position: fixed;
   bottom: 0;
 }
+@media all and (max-width: 480px) {
+  .footer {
+    width: 100%;
+  }
+}
 
 /* Les menus individuels */
 .menu__ligne {
   display: flex;
   justify-content: space-between;
+}
+@media all and (max-width: 480px) {
+  .menu__ligne {
+    flex-direction: column;
+  }
 }
 
 /* Chaque menu est un btn */
@@ -259,6 +285,11 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   margin: auto;
   padding-top: 1rem;
 }
+@media all and (max-width: 480px) {
+  .btn-next {
+    width: 50%;
+  }
+}
 .btn-next__content {
   display: flex;
   justify-content: center;
@@ -280,9 +311,9 @@ flex space-between pour positionner les 2 éléments qu'il contient */
 .menu p {
   transform: scale(1);
   opacity: 1;
+  transition: 0.5s;
 }
 .menu p:hover {
-  transition: 0.5s;
   transform: scale(1.2);
   opacity: 0.25;
 }
@@ -931,6 +962,15 @@ flex space-between pour positionner les 2 éléments qu'il contient */
   background-size: 100%;
   background-position-y: center;
 }
+@media all and (max-width: 480px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+  }
+}
 
 .logo-m1 {
   height: 40px;
@@ -941,6 +981,21 @@ flex space-between pour positionner les 2 éléments qu'il contient */
 
 .plat p, .prix p {
   margin: 5px 0;
+}
+
+@media all and (max-width: 480px) {
+  .plat p {
+    margin-bottom: 0;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .prix {
+    text-align: end;
+  }
+  .prix p {
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
