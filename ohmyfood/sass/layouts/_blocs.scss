@@ -22,6 +22,7 @@ flex space-between pour positionner les 2 éléments qu'il contient */
 	width: $width-site;
 	position: fixed;
 	bottom: $size-0;
+	z-index: 10;
 	@media all and (max-width:480px)
 		{
 			width: $width-site-responsive;
