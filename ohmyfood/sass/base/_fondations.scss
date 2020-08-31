@@ -18,6 +18,17 @@
 		}
 	}
 
+/* Largeur du container main bridée en max */
+	main
+	{
+		max-width: 625px;
+		margin: auto auto $size-XXL auto;
+		@media all and (max-width:480px)
+		{
+			margin: auto 30px $size-XXL 30px;
+		}
+	}
+
 /* Largeur du contenu des menus */
 	.bloc
 	{
@@ -64,6 +75,11 @@
 
 /* Définition des marges externes et internes */
 /* Définition des marges externes */
+	.margin-auto
+	{
+		margin: auto;
+	}
+
 	.margin0
 	{
 		margin: $size-0;

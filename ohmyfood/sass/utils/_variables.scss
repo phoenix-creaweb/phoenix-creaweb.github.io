@@ -45,7 +45,7 @@
 
 // Définition des dimensions clés
 // largeur du site
-    $width-site: 480px;
+    $width-site: 80%;
     $width-site-responsive: 100%;
 // largeur des déco de ss-titre dans les menus
     $width-deco: 25%;
@@ -72,9 +72,10 @@
     $size-XXS: 1px;
     $size-XS: 2px;
     $size-S: 5px;
-    $size-M: 10px;
+    $size-M: 14px;
     $size-ML: 16px;
     $size-L: 20px;
+    $size-LL: 24px;
     $size-XL: 40px;
     $size-XXL: 80px;
 
@@ -133,7 +134,8 @@ $map-menu:(
         ft: $ft1,
         ft-size: $size-M + $size-L,
         ftx: $ftx1,
-        ftx-size: $size-M,
+        ftx-size: $size-ML,
+        ftx-size-resp: $size-M,
         deco-L-a: $url-m1-deco-L,
         deco-R-a: $url-m1-deco-R,
         deco-L-b: $url-m1-deco-L,
@@ -154,9 +156,10 @@ $map-menu:(
         clr-grad-a: $color-menu2-gradient-a,
         clr-grad-b: $color-menu2-gradient-b,
         ft: $ft2,
-        ft-size: $size-L,
+        ft-size: $size-LL,
         ftx: $ftx2,
-        ftx-size: $size-M,
+        ftx-size: $size-ML,
+        ftx-size-resp: $size-M,
         deco-L-a: $url-m2-deco-L-a,
         deco-R-a: $url-m2-deco-R-a,
         deco-L-b: $url-m2-deco-L-b,
@@ -179,7 +182,8 @@ $map-menu:(
         ft: $ft3,
         ft-size: $size-M + $size-L,
         ftx: $ftx3,
-        ftx-size: $size-M,
+        ftx-size: $size-ML,
+        ftx-size-resp: $size-M,
         deco-L-a: $url-m3-deco-L-a,
         deco-R-a: $url-m3-deco-R-a,
         deco-L-b: $url-m3-deco-L-b,
@@ -202,7 +206,8 @@ $map-menu:(
         ft: $ft4,
         ft-size: $size-M + $size-L,
         ftx: $ftx4,
-        ftx-size: $size-M,
+        ftx-size: $size-ML,
+        ftx-size-resp: $size-M,
         deco-L-a: $url-m4-deco-L,
         deco-R-a: $url-m4-deco-R,
         deco-L-b: $url-m4-deco-L,
