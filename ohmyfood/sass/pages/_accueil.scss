@@ -7,14 +7,9 @@
 	justify-content: center;
 	p
 		{
-			transform: scale(1);
-			opacity: 1;
-			transition: .5s;
-
 		&:hover
 			{
-				transform: scale(1.2);
-				opacity: 0.25;
+				animation: zoom-btn 500ms forwards;
 			}
 		}
 }

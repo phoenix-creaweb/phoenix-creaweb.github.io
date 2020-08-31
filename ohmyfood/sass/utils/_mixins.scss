@@ -24,7 +24,9 @@
                     font-family: map-get($map: $argument, $key: ft);
                     font-size: map-get($map: $argument, $key: ft-size)*2/3;
                 }
+                
             }
+            
             &__subtitle // concerne "MENU" en ss-titre de chaque nom de restaurant
             {
                 color: map-get($map: $argument, $key: clr-subtitle);
@@ -35,6 +37,10 @@
             {
                 color: map-get($map: $argument, $key: clr-entree);
                 font-size: map-get($map: $argument, $key: ftx-size);
+                @media all and (max-width:480px)
+		        {
+                    font-size: map-get($map: $argument, $key: ftx-size-resp);
+                }
                 
                 &-titre // génération du selecteur -mx__entree-titre
                 {
@@ -103,6 +109,11 @@
             {
                 color: map-get($map: $argument, $key: clr-plat);
                 font-size: map-get($map: $argument, $key: ftx-size);
+                @media all and (max-width:480px)
+		        {
+                    font-size: map-get($map: $argument, $key: ftx-size-resp);
+                }
+
                 &-titre
                 {
                     display: flex;
@@ -167,6 +178,11 @@
             {
                 color: map-get($map: $argument, $key: clr-dessert);
                 font-size: map-get($map: $argument, $key: ftx-size);
+                @media all and (max-width:480px)
+		        {
+                    font-size: map-get($map: $argument, $key: ftx-size-resp);
+                }
+
                 &-titre
                 {
                     display: flex;
@@ -240,7 +256,7 @@
             &__title // génération du selecteur -mx__title
             {
                 font-family: map-get($map: $argument, $key: ft);
-                font-size: $size-ML;
+                font-size: $size-LL;
                 background: linear-gradient(90deg, map-get($argument, clr-grad-a), map-get($argument, clr-grad-b));
                 background-clip: text;
                 -webkit-background-clip: text;
