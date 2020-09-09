@@ -22,6 +22,11 @@ main
 	flex-direction: column;
 }
 
+.liens 
+{
+	display:flex;
+}
+
 /* Définition des Couleurs de fond */
 
 .backgnd_grey
