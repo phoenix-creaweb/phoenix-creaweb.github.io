@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Phoenix Creaweb, Bac à sable Javascript</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177057510-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-177057510-1');
+	</script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 id="pageTitle">Bac à sable pour code Javascript :)</h1>
+            </header>
+            
+            <main>
+                <div class="bloc">
+                    <h2 class="bloc__title">Premier bloc - un compteur de clics sur un bouton</h2>
+                    <p>Le clic sur un bouton fait augmenter un compteur.<br>De plus, des messages d'alerte appraissent en fonction du nombre de clics.<br>Enfin, le highscore est enregistré sur ton poste en local, ainsi quand tu reviendras sur ce site, tu pourras essayer de battre ton record local.</p><p>Enjoy :)</p>
+                    <div class="button">
+                        <button id="clicme"> Clic-me :)</button>
+                    </div>
+                    <div class="commentaire">
+                        <p>Tu as cliqué <strong><span id="count">0</span></strong> fois sur le bouton.</p>
+                        <p>Le plus grand nombre de clics enregistré localement est de <strong><span id="highscore">0</span></strong></p>
+                    </div>        
+                </div>
+
+                <div class="bloc">
+                    <h2 class="bloc__title">Second bloc - la météo à Oloron Sainte Marie</h2>
+                    <p>Dans ce second bloc, je récupère les infos météo à Oloron Sainte Marie depuis un serveur Suisse en utilisant son API. Source des données <a href="https://www.prevision-meteo.ch/" target="a_window">https://www.prevision-meteo.ch/</a></p>
+                    <div id="meteo">
+
+                    </div>
+                </div>
+
+                <div class="bloc">
+                    <h2 class="bloc__title">Troisième bloc</h2>
+                    <p>Dans ce troisième bloc, je je ne sais pas encore ce que je vais y mettre.</p>
+                    
+                                
+                </div>
+            </main>
+
+            
+        </div>
+        <footer>
+            <p>(c) 2020 Phoenix Creaweb, Sébastien 'Padhré' DULUC</p>
+        </footer>
+    </body>
+    <script src="./script/clicme.js"></script>
+    <script src="./script/meteo.js"></script>
+</html>

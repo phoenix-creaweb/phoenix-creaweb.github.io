@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title></title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+    
+        <link rel="stylesheet" type="text/css" href="./style.css">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177057510-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-177057510-1');
+	</script>
+    </head>
+    <body>
+        <div class="container">
+
+            <h1>OpenClassrooms, Développeur Web, mes mises en application du P3</h1>
+<!-- Animation d'un bouton -->
+            <h2>Animation au survol d'un bouton</h2>
+            <h3>un bouton qui grandit au survol :)</h3>
+                <div class="btn">
+                    Vois comme je grandis !
+                </div>
+
+            <h3>un bouton qui grandit en douceur au survol</h3>
+                <div class="btn2">
+                    Vois comme je grandis avec fluidité !
+                </div>
+
+            <h3>un bouton qui grandit en douceur au survol :)</h3>
+                <div class="btn3">
+                    Le même refactoré et plus rapide ;)
+                </div>
+
+
+<!-- Les formulaires, validation et animation de la mise en forme -->
+            <h2>La validation d'un formulaire</h2>
+            <h3>Le formulaire :)</h3>
+            <p>Si le contenu de la zone de saisie est invalide une fois qu'on quitte la zone, elle se colore en rouge :p. Tant qu'il n'y a rien dans la zone de saisie, elle reste telle que définie initialement. :)</p>
+            <p>Petit bonus, on a une transition de 1 seconde sur la couleur de fond et 0.5s sur la couleur de bordure (animations !!!)</p>
+            <div class="form">
+                <div class="form__group">
+                    <label for="">email</label>
+                    <input type="email" name="" id=">"
+                </div>
+            </div>
+
+<!-- Le retour du bouton: animation du voisin -->
+            <h2>Le bouton qui anime son voisin</h2>
+            <p>Utilisation du combinateur d'adjacence "+" dans la déclaration de mes sélecteurs</p>
+            <div class="voisin ctrd">
+                <div class="btn4">
+                    C'est parti !!!
+                </div>
+                <div class="baballe ctrd">
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                </div>
+            </div>
+            <p>En survolant le bouton "C'est parti", on déclenche l'animation des balles grises en même temps qu'une animation sur le bouton lui-même.</p>
+            <p>Pour compliquer la chose, j'anime les deux balles en les encapsulant dans une div ".baballe". C'est elle le voisin du bouton, et, elle contient les deux balles qui grandissent en même temps (en réalité, c'est la div baballe et tout ce qu'elle contient qui grandit).</p>
+            <p>Pour corser le tout, les balles changent de couleur. Pour cela, j'ai ajouté le sélecteur .ball à mon sélecteur combiné ...</p>
+            <pre class="insert-code"><code class="scss">
+&:hover + .baballe
+{
+    transform: scale(1.5);
+    .ball
+    {
+        background: $cd-danger;
+    }
+    
+}
+            </code></pre>
+            <div>
+                <p>Avez-vous remarqué l'animation sur l'insert de code ci-dessus?</p>
+            </div>
+            
+        </div>
+
+<!-- Une petite animation verticale avec timing -->
+        <h2>Animations sur billes</h2>
+            <p>Les 3 premières animations sont générées par les transition-timing-function par défaut: ease-in, ease-out et ease-in-out.</p>
+            <p>La transition "Custom" est générée à l'aide de la fonction de transition "cubic-bezier". L'effet rebond est donné par l'utilisation de coordonnées qui font "sortir" la trajectoire de l'animation du cadre normalisé (x,y) qui permet de définir les coordonnées de référence de la fonction cubic-bezier.</p>
+            <p>Survoler les boutons déclenche l'animation. Enjoy :)</p>
+        <div class="anim">
+            <div class="col">
+                <div class="btn-clic">Ease-In</div>
+                <div class="colonne ctrd">                    
+                    <div class="bille easein">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="btn-clic">Ease Out</div>
+                <div class="colonne ctrd">                    
+                    <div class="bille easeout">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="btn-clic">Ease In Ease Out</div>
+                <div class="colonne ctrd">                    
+                    <div class="bille easeinout">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="btn-clic">Custom :)</div>
+                <div class="colonne ctrd">                    
+                    <div class="bille bezier-rebond">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="btn-clic">Step by Step</div>
+                <div class="colonne ctrd">                    
+                    <div class="bille pas-a-pas">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- D'autres animations à se mettre sous la dent -->
+        <h2>D'autres animations à se mettre sous la dent</h2>
+            <p>Les animations précédentes mettent en oeuvre <strong>transform: scale();</strong> et <strong>transform: translate();</strong>.</p>
+            <p>Il existe de nombreuse autres animations à se mettre sous la dent pour animer visuellement un site :)</p>
+
+            <h3>La rotation.</h3>
+            <p>Pour les rotations autour de X et Y, pour obtenir un effet 3D de la rotation, il faut définir une perspective(), c'est à dire une distance d'observation (ici 150px).</p>
+            <div class="anim">
+                <div class="capsule">
+                    <div class="btn-a">Rotation autour de Z</div>
+                    <div class="cargo">
+                        <div class="box-rotZ bezier-rebond"></div>
+                    </div>
+                </div>
+
+                <div class="capsule">
+                    <div class="btn-a">Rotation autour de X</div>
+                    <div class="cargo">
+                        <div class="box-rotX bezier-rebond"></div>
+                    </div>
+                </div>
+
+                <div class="capsule">
+                    <div class="btn-a">Rotation autour de Y</div>
+                    <div class="cargo">
+                        <div class="box-rotY bezier-rebond"></div>
+                    </div>
+                </div>
+            </div>
+                <h3>L'inclinaison.</h3>
+                <p>A ne pas confondre avec la rotation.</p>
+                <div class="anim">
+                    <div class="capsule">
+                        <div class="btn-a">Inclinaison svt X</div>
+                        <div class="cargo">
+                            <div class="box-skewX bezier-rebond"></div>
+                        </div>
+                    </div>
+    
+                    <div class="capsule">
+                        <div class="btn-a">Inclinaison svt Y</div>
+                        <div class="cargo">
+                            <div class="box-skewY bezier-rebond"></div>
+                        </div>
+                    </div>
+    
+                    <div class="capsule">
+                        <div class="btn-a">Suivant X et Y</div>
+                        <div class="cargo">
+                            <div class="box-skewXY bezier-rebond"></div>
+                        </div>
+                    </div>
+            </div>
+            <h2>Un bouton 3D qui bascule... pfiou, ça devient chaud mais c'est beau</h2>
+            <p>Ici, il faut jouer d'astuce, de perspective, ... pour que cela fonctionne.</p>
+            <p>Le principe: ce sont deux faces qui ont une arête commune. L'un nous fait face, l'autre est à plat à l'aide d'une rotation de -90° autour de X (l'axe horizontal).</p>
+            <p>Les deux faces sont décalées en Z de la moitié de leur hauteur. Sans cela, les faces se croiseraient en leurs milieux.</p>
+            <p>Autre fonctionnalité indispensable: transform-style: preserve-3D. Indispensable pour que l'effet fonctionne; cette fonction préserve l'espace 3D de l'élément ciblé.</p>
+            <div>
+                <div class="button3d">
+                      <div class="btn3d">
+                        <div class="btn__flip">
+                            <div class="btn__flip--off">OFF</div>
+                            <div class="btn__flip--on">ON</div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            
+
+            <h2>Animons les couleurs avec opacity()</h2>
+            <p>Afin de garantir la performance de la page web et de ses animations, il est préférable d'utiliser la fonction opacity plutôt que transform. En effet, cette dernière déclenche un recalcul de la page alors que opacity non.</p>
+            <p>En contre-partie, le code html doit être revu de manière à rendre possible l'utilisation de opacity.</p>
+            <p>Le principe consiste à construire l'élément à modifier en deux couches superposées. La couche du fond et une couche supérieure qui sera transparente au lancement et qu'on rendra opaque au moment de l'animation.</p>
+            <div class="anim">      
+                <div class="btn-fond">
+                    Survole-moi !
+                </div>
+
+                <div class="btn-fond-degrade">
+                    Survole-moi !
+                </div>
+            </div>
+    </div>
+    </body>
+</html>

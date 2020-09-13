@@ -1,0 +1,79 @@
+/* Caractéristiques générales de la page */
+
+body
+{
+    font-family: 'Trebuchet MS';
+    color: grey;
+}
+
+#container
+{
+    width:80%;
+    margin: auto;
+}
+
+footer, header
+{
+    background: grey;
+    color: white;
+}
+
+footer
+{
+    margin-top: 1rem;
+    padding: 1rem 0;
+}
+
+h1
+{
+    margin: 0;
+    padding: 1rem 0;
+}
+
+main
+{
+    margin-top: 1rem;
+}
+
+#sandbox
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.box
+{
+    width: 200px;
+    height: 200px;
+    border: 2px solid grey;
+    position: relative;
+}
+
+.box-link
+{
+    position: relative;
+    top: 40%;
+    width: fit-content;
+    margin: auto;
+    
+}
+
+
+.centered
+{
+    text-align: center;
+}
+
+a
+{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: grey;
+}
+
+.borderDraft
+{
+    border: 1px solid lime;
+}

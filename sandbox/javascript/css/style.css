@@ -1,0 +1,94 @@
+body{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 0;
+    color: grey;
+}
+
+.container, footer
+{
+    width: 80%;
+    margin: auto;
+    
+}
+
+.container
+{
+    margin-bottom: 150px;
+}
+
+#pageTitle
+{
+    text-align: center;
+    background: lightcoral;
+    color: white;
+    border-radius: 0 0 2rem 2rem;
+    padding: 1rem;
+}
+
+footer
+{
+    text-align: center;
+    background: lightcoral;
+    color: white;
+    border-radius: 2rem 2rem 0 0;
+    padding: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 1.2rem;
+}
+
+.bloc
+{
+    border: 2px solid lightcoral;
+    border-radius: 2rem;
+    padding: 0 2rem;
+    margin: 2rem auto;
+    width: 80%;
+    
+}
+
+#clicMe
+{
+    background: lightcoral;
+    color: white;
+    font-size: 2rem;
+    border: 0;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    
+}
+
+.commentaire
+{
+    text-align: center;
+}
+
+.button
+{
+    width: fit-content;
+    margin: auto;
+}
+
+#meteo
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.meteo-bloc
+{
+    margin: 1rem;
+    text-align: center;
+}
+
+a, strong
+{
+    color: lightcoral;
+}
