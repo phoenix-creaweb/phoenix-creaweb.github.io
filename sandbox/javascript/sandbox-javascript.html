@@ -40,9 +40,26 @@
                 </div>
 
                 <div class="bloc">
-                    <h2 class="bloc__title">Troisième bloc</h2>
-                    <p>Dans ce troisième bloc, je je ne sais pas encore ce que je vais y mettre.</p>
-                    
+                    <h2 class="bloc__title">Troisième bloc - la météo avec un choix de la ville</h2>
+                    <p>Dans ce troisième bloc, je vous invite à choisir une ville et à cliquer sur le bouton pour afficher le temps actuel pour la ville sélectionnée. Les informations sont directement récupérée à distance en fonction de la sélection.</p>
+                    <div id="meteo2">
+                        <div id="selection">
+                            <div class="choix">
+                                <input type="radio" id="paris" name="city" value="paris" checked>
+                                <label for="paris">Paris</label>
+                            </div>
+                            <div class="choix">
+                                <input type="radio" id="oloron" name="city" value="oloron-sainte-marie">
+                                <label for="oloron">Oloron-Ste-Marie</label>
+                            </div>
+                            <div class="btn">
+                                <button id="ask-weather">Cliquer pour avoir la météo</button>
+                            </div>
+                        </div>
+                        <div id="weather-result"><p>Faites votre choix et cliquez sur le bouton ;)</p></div>
+                    </div>
+                      
+                      
                                 
                 </div>
             </main>
@@ -53,6 +70,7 @@
             <p>(c) 2020 Phoenix Creaweb, Sébastien 'Padhré' DULUC</p>
         </footer>
     </body>
-    <script src="./script/clicme.js"></script>
-    <script src="./script/meteo.js"></script>
+    <script type="text/javascript" src="./script/clicme.js"></script>
+    <script type="text/javascript" src="./script/meteo.js"></script>
+    <script type="text/javascript" src="./script/meteo2.js"></script>
 </html>

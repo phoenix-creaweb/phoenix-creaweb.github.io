@@ -92,3 +92,40 @@ a, strong
 {
     color: lightcoral;
 }
+
+#meteo2
+{
+    width: 80%;
+    margin: auto;
+    min-height: 250px;
+}
+#selection
+{
+    
+}
+
+.city-name
+{
+    text-transform: uppercase;
+}
+
+.choix
+{
+    margin: .5rem 0;
+}
+
+.btn
+{
+    width: fit-content;
+    margin: auto;
+}
+
+#ask-weather
+{
+    background: lightcoral;
+    color: white;
+    border: lightcoral;
+    font-size: 1.1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
