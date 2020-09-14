@@ -5,14 +5,14 @@
 body
 {
 	font-family: 'Josefin Sans', sans-serif;
+	margin: 0;
 }
 
 .contenu
 {
-	margin: auto;
-	border: lightgrey 1px solid;
-	padding: 5px;
-	max-width: 1000px;
+	
+	
+	/*max-width: 1000px;
 	/*width: fit-content;*/
 }
 
@@ -156,9 +156,9 @@ p a:hover
 .project_preview
 {
 	padding: 5px;
-	margin: 10px;
-    width: 130px;
-	height: 130px;
+	margin: 5px;
+    width: 150px;
+	height: 150px;
 	
 }
 
@@ -218,20 +218,4 @@ p a:hover
 
 /* Modifications en fonction des tailles d'écran */
 
-@media all AND (max-width: 800px) AND (min-width: 361px)
-{
-	.project_preview
-	{
-		width: 130px;
-		height: 130px;
-	}
-}
 
-@media all AND (max-width: 360px) AND (min-width: 300px)
-{
-	.project_preview
-	{
-		width: 100px;
-		height: 100px;
-	}
-}

@@ -3,13 +3,13 @@
 body
 {
     font-family: 'Trebuchet MS';
-    color: grey;
+    color: white;
+    background: grey;
 }
 
 #container
 {
-    width:80%;
-    margin: auto;
+    
 }
 
 footer, header
@@ -40,7 +40,18 @@ main
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: fit-content;
     
+    margin: auto;
+    
+}
+
+@media all AND (min-width: 425px)
+{
+    #sandbox
+    {
+        width: 409px;
+    }
 }
 
 .box
@@ -49,6 +60,8 @@ main
     height: 200px;
     border: 2px solid grey;
     position: relative;
+    background: white;
+    border-radius: 1rem;
 }
 
 .box-link
