@@ -10,7 +10,7 @@ askWeather.addEventListener('click', function() {
       request.onreadystatechange = function() {
         if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
             let response = JSON.parse(this.responseText);
-            weatherResult.innerHTML = "<p>En ce moment, c'est " + response.current_condition.condition + " à <strong class='city-name'>" + cityName + "</strong> !!!</p><p><img src=" + response.current_condition.icon + ">" ;
+            weatherResult.innerHTML = "<p>En ce moment, c'est <span class='condition'>" + response.current_condition.condition + "</span> à <strong class='city-name'>" + cityName + "</strong> !!!</p><p><img src=" + response.current_condition.icon + ">" ;
         };
       };
       request.open("GET", "https://www.prevision-meteo.ch/services/json/"+cityName);

@@ -1,16 +1,22 @@
 <html>
     <head>
         <title>Phoenix Creaweb, Bac à sable Javascript</title>
+        
+        <link rel="shortcut icon" href="./../../favicon.ico">
         <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    
         <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177057510-1"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177057510-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-177057510-1');
+        </script>
 
-	gtag('config', 'UA-177057510-1');
-	</script>
     </head>
     <body>
         <div class="container">
@@ -52,7 +58,7 @@
                                 <input type="radio" id="oloron" name="city" value="oloron-sainte-marie">
                                 <label for="oloron">Oloron-Ste-Marie</label>
                             </div>
-                            <div class="btn">
+                            <div class="button">
                                 <button id="ask-weather">Cliquer pour avoir la météo</button>
                             </div>
                         </div>
